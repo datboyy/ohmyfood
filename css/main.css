@@ -8,11 +8,55 @@
   {
     margin-top: 30px;
   }
+
   section.geo
   {
-    margin-top: 25px;
+    margin: 0;
     text-align: center;
+    font-family: 'Roboto';
+    color: #555;
+    font-weight: 700;
+    margin-top: 25px;
     background-color: #EAEAEA;
     padding: 20px 0 20px 0;
+  }
+  section.geo i
+  {
+    margin-right: 25px;
+  }
+
+  section.explore
+  {
+    padding: 40px 90px 0 90px;
+    margin: 0;
+    background-color: #F6F6F6;
+    text-align: center;
+  }
+  section.explore h1
+  {
+
+    font-family: 'Roboto';
+    font-weight: 00;
+    margin: 0;
+  }
+  section.explore p
+  {
+    color: #555;
+    margin: 15px;
+  }
+  section p.explore-btn-container
+  {
+    margin-bottom: 40px;
+  }
+  section p a.explore-btn
+  {
+    display: block;
+    padding: 20px 0 20px 0;
+    font-family:"Roboto";
+    font-weight: 700;
+    color: #FFF;
+    background: rgb(147,86,220);
+    background: linear-gradient(0deg, rgba(147,86,220,1) 24%, rgba(255,121,218,1) 100%);
+    border-radius: 40px;
   }
 }
