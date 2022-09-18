@@ -135,6 +135,20 @@
     font-family: Roboto;
     font-weight: 600;
   }
+  section.restaurants .restaurant .card .flex
+  {
+    display: flex;
+  }
+  section.restaurants .restaurant .card .flex div:first-of-type
+  {
+    flex: 1;
+  }
+  section.restaurants .restaurant .card .flex div:last-of-type
+  {
+    margin-right: 25px;
+    margin-top: 30px;
+    font-size: 30px;
+  }
   section.restaurants .restaurant .card img
   {
     width: 100%;
@@ -158,9 +172,13 @@
   section.restaurants .restaurant .card p
   {
     margin-top: 5px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
     font-family: 'Roboto';
     font-size: 20px;
     color: #555;
+  }
+  .footer
+  {
+    background-color: #353535;
   }
 }
