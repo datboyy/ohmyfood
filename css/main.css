@@ -179,6 +179,24 @@
   }
   .footer
   {
+    padding: 30px 0 15px 15px;
     background-color: #353535;
+  }
+  .footer ul
+  {
+    list-style-type: none;
+    padding: 0;
+  }
+  .footer ul li
+  {
+    color: #fff;
+    font-family: 'Roboto';
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  .footer img
+  {
+    color: #fff;
+    width: 150px;
   }
 }
