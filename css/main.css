@@ -114,9 +114,9 @@
     background-color: #F6F6F6;
     padding-top: 30px;
   }
-  section.restaurants .card
+  section.restaurants .restaurant .card
   {
-    width: 100%;
+    width: 90%;
     margin: auto;
     margin-bottom: 30px;
     border-radius: 25px;
@@ -124,7 +124,18 @@
     -webkit-box-shadow: 5px 11px 15px 5px rgba(0,0,0,0.09);
     box-shadow: 5px 11px 15px 5px rgba(0,0,0,0.09);
   }
-  section.restaurants .card.taste img
+  section.restaurants .restaurant .card .new
+  {
+    background-color: #99E2D0;
+    position: absolute;
+    right: 70px;
+    margin-top: 20px;
+    padding: 8px 10px 8px 10px;
+    color: #2DA285;
+    font-family: Roboto;
+    font-weight: 600;
+  }
+  section.restaurants .restaurant .card img
   {
     width: 100%;
     height: 200px;
@@ -132,19 +143,19 @@
     border-top-left-radius: 28px;
     border-top-right-radius: 25px;
   }
-  section.restaurants h3, section.restaurants p
+  section.restaurants .restaurant h3, section.restaurants .restaurant p
   {
     margin-left: 15px;
     font-family: Roboto;
   }
-  section.restaurants .card h3
+  section.restaurants .restaurant .card h3
   {
     font-family: 'Roboto';
     font-size: 20px;
     margin-bottom: 0px;
     font-weight: 700;
   }
-  section.restaurants .card p
+  section.restaurants .restaurant .card p
   {
     margin-top: 5px;
     padding-bottom: 20px;
