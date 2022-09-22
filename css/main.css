@@ -162,8 +162,10 @@
     margin-left: 15px;
     font-family: Roboto;
   }
-  section.restaurants .restaurant .card h3
+  section.restaurants .restaurant .card h3 a
   {
+    color: #000;
+    text-decoration: none;
     font-family: 'Roboto';
     font-size: 20px;
     margin-bottom: 0px;
