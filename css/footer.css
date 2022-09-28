@@ -1,0 +1,32 @@
+@media (max-width: 768px)
+{
+  footer
+  {
+    padding: 15px 0 15px 15px;
+    background-color: #353535;
+  }
+  footer h1
+  {
+    color: white;
+    font-family: 'Shrikhand';
+    font-size: 35px;
+    font-style: italic;
+  }
+  footer ul
+  {
+    list-style-type: none;
+    padding: 0;
+  }
+  footer ul li
+  {
+    color: #fff;
+   font-family: 'Roboto';
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  footer img
+  {
+    color: #fff;
+    width: 150px;
+  }
+}
