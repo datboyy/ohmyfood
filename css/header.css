@@ -6,11 +6,11 @@
 @media (max-width: 768px)
 {
   /* Header, header logo */
-  header
+  .header
   {
     text-align: center;
   }
-  header img
+  .header--img
   {
     margin: 30px 15px;
     width: 50%;
