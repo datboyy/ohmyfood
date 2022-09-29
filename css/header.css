@@ -5,18 +5,32 @@
  */
 @media (max-width: 768px)
 {
-  /* Header, header logo */
-  header
+  /* """ heading """ on home page */
+  .header { text-align: center; }
+  .header--img
   {
-    text-align: center;
+    width: 50%;
+    margin: 30px 15px;
   }
-  header img
+  .header-menu--page
   {
+    display: flex;
+    width: 90%;
+  }
+  .header-menu-page--img
+  {
+    align-self: center;
     margin: 30px 15px;
     width: 50%;
   }
+  header.header--back
+  {
+    font-size: 30px;
+    margin: 0 40px 0 40px;
+    align-self: center;
+  }
   /* """ Localisation """ section */
-  section.geo
+  section.head
   {
     margin: 25px 0 0 0 0;
     padding: 20px 0 20px 0;
@@ -26,12 +40,12 @@
     color: #555;
     font-weight: 700;
   }
-  section.geo i
+  section.head i
   {
     margin-right: 25px;
   }
   /* """ Heading """ explore btn */
-  section.explore
+  section p:last-of-type
   {
     margin: 0;
     padding: 40px 90px 40px 90px;
