@@ -1,0 +1,95 @@
+@media (max-width: 768px)
+{
+  /*** Headers specific to restaurant menu */
+  header
+  {
+    display: flex;
+    width: 90%;
+  }
+  header img
+  {
+    align-self: center;
+    margin: 30px 15px;
+    width: 50%;
+  }
+  header i
+  {
+    font-size: 30px;
+    margin: 0 40px 0 40px;
+    align-self: center;
+  }
+  /* Restaurant """ menu """ container */
+  section.menu
+  {
+    margin-top: 20px;
+    width: 100%;
+  }
+  /* Restaurant """ menu """ image  */
+  section.menu img
+  {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  /* """ Menu """ card container */
+  .menu_card
+  {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    z-index: 1;
+    margin-top: -25px;
+    background-color: #F1F1F1;
+    border-radius: 25px;
+    box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.16);
+  }
+
+  /* @FIXME ? */
+  /* """ Menu """ card title container */
+  .menu_card .title
+  {
+    display: flex;
+  }
+  /* """ Menu """ card title */
+  .menu_card h2
+  {
+    padding-left: 20px;
+    font-family: "Shrikhand";
+    font-size: 35px;
+    flex: 1;
+  }
+  /* """ Menu """ card heart icon */
+  .menu_card i
+  {
+    margin-right: 20px;
+    align-self: center;
+    font-size: 30px;
+  }
+  .menu_card .card
+  {
+    margin: 10px 20px 20px 20px;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.16);
+  }
+  .menu_card .card h3
+  {
+    margin-bottom: 0;
+    font-family:'Roboto';
+  }
+  .menu_card .card p
+  {
+    display: flex;
+    margin-top: 5px;
+    font-family: 'Roboto';
+  }
+  .menu_card p span:first-of-type
+  {
+    flex: 1;
+  }
+  .menu_card p span:last-of-type
+  {
+    font-weight: bold;
+  }
+}

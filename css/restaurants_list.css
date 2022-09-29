@@ -1,0 +1,75 @@
+@media (max-width: 768px)
+{
+  /* """ Restaurants """ sections */
+  section.restaurants
+  {
+    background-color: #F6F6F6;
+    padding-top: 30px;
+  }
+  /* """ Restaurants """ card element */
+  section.restaurants .restaurant .card
+  {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    background-color: #FFF;
+    box-shadow: 5px 11px 15px 5px rgba(0,0,0,0.09);
+  }
+  /** """ Restaurants """ card """ new """ mention */
+  section.restaurants .restaurant .card .new
+  {
+    position: absolute;
+    margin-top: 20px;
+    padding: 8px 10px 8px 10px;
+    right: 70px;
+    background-color: #99E2D0;
+    color: #2DA285;
+    font-family: Roboto;
+    font-weight: 600;
+  }
+  /** """ Restaurants cards content is a flex line */
+  section.restaurants .restaurant .card .flex
+  {
+    display: flex;
+  }
+  section.restaurants .restaurant .card .flex div:first-of-type
+  {
+    flex: 1;
+  }
+  section.restaurants .restaurant .card .flex div:last-of-type
+  {
+    margin: 25px 25px 0 0;
+    font-size: 20px;
+  }
+  /* """ Restaurants """ cards  images integration */
+  section.restaurants .restaurant .card img
+  {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+  }
+  /** """ Restaurants """ restaurant card title */
+  section.restaurants .restaurant .card h3
+  {
+    font-family: 'Roboto';
+    font-size: 18px;
+    margin-bottom: 0px;
+    font-weight: 700;
+  }
+  /* """ Restaurants """ restaurant fonts */
+  section.restaurants .restaurant h3, section.restaurants .restaurant p
+  {
+    margin-left: 15px;
+    font-family: Roboto;
+  }
+  section.restaurants .restaurant .card p
+  {
+    margin-top: 5px;
+    padding-bottom: 0px;
+    font-family: 'Roboto';
+    font-size: 15px;
+    color: #555;
+  }
+}
