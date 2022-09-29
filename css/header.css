@@ -6,40 +6,26 @@
 @media (max-width: 768px)
 {
   /* Header, header logo */
-  .header
+  header
   {
+    width: 100%;
     text-align: center;
   }
-  .header--img
+  header .header--img
   {
-    margin: 30px 15px;
+    margin: 30px;
     width: 50%;
   }
-  /* """ Localisation """ section */
-  section.geo
-  /* """ heading """ on home page */
-  .header { text-align: center; }
-  .header--img
+  header .header-i--back
   {
-    width: 50%;
-    margin: 30px 15px;
+    position: absolute;
+    top: 35px;
+    left: 15px;
+    font-size: 25px;
   }
-  .header-menu--page
+  header .header-a--back
   {
-    display: flex;
-    width: 90%;
-  }
-  .header-menu-page--img
-  {
-    align-self: center;
-    margin: 30px 15px;
-    width: 50%;
-  }
-  header.header--back
-  {
-    font-size: 30px;
-    margin: 0 40px 0 40px;
-    align-self: center;
+    color: #000;
   }
   /* """ Localisation """ section */
   section.head
@@ -57,7 +43,7 @@
     margin-right: 25px;
   }
   /* """ Heading """ explore btn */
-  section p:last-of-type
+  section.head p:last-of-type
   {
     margin: 0;
     padding: 40px 90px 40px 90px;
