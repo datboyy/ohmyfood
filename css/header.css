@@ -1,0 +1,71 @@
+/*
+ *
+ * Pages header
+ *
+ */
+@media (max-width: 768px)
+{
+  /* Header, header logo */
+  header
+  {
+    text-align: center;
+  }
+  header img
+  {
+    margin: 30px 15px;
+    width: 50%;
+  }
+  /* """ Localisation """ section */
+  section.geo
+  {
+    margin: 25px 0 0 0 0;
+    padding: 20px 0 20px 0;
+    background-color: #EAEAEA;
+    text-align: center;
+    font-family: 'Roboto';
+    color: #555;
+    font-weight: 700;
+  }
+  section.geo i
+  {
+    margin-right: 25px;
+  }
+  /* """ Heading """ explore btn */
+  section.explore
+  {
+    margin: 0;
+    padding: 40px 90px 40px 90px;
+    background-color: #F6F6F6;
+    text-align: center;
+  }
+  /* """ Heading """ explore presentation title text */
+  section.explore h2
+  {
+    font-family: 'Roboto';
+    font-weight: 00;
+    margin: 0;
+  }
+  /* """ Heading explore subtitle */
+  section.explore p
+  {
+    color: #555;
+    margin: 15px;
+    font-family: 'Roboto';
+  }
+  /* """ Explore button */
+  section p.explore-btn-container
+  {
+    margin-bottom: 40px;
+  }
+  section p a.explore-btn
+  {
+    display: block;
+    padding: 20px 0 20px 0;
+    background: linear-gradient(0deg, rgba(147,86,220,1) 24%,
+                                      rgba(255,121,218,1) 100%);
+    border-radius: 40px;
+    font-family:"Roboto";
+    font-weight: 700;
+    color: #FFF;
+  }
+}
