@@ -5,6 +5,7 @@
  */
 @media (max-width: 768px)
 {
+<<<<<<< HEAD
   /* Header, header logo */
   header
   {
@@ -17,6 +18,34 @@
   }
   /* """ Localisation """ section */
   section.geo
+=======
+  /* """ heading """ on home page */
+  .header { text-align: center; }
+  .header--img
+  {
+    width: 50%;
+    margin: 30px 15px;
+  }
+  .header-menu--page
+  {
+    display: flex;
+    width: 90%;
+  }
+  .header-menu-page--img
+  {
+    align-self: center;
+    margin: 30px 15px;
+    width: 50%;
+  }
+  header.header--back
+  {
+    font-size: 30px;
+    margin: 0 40px 0 40px;
+    align-self: center;
+  }
+  /* """ Localisation """ section */
+  section.head
+>>>>>>> bem
   {
     margin: 25px 0 0 0 0;
     padding: 20px 0 20px 0;
@@ -26,12 +55,20 @@
     color: #555;
     font-weight: 700;
   }
+<<<<<<< HEAD
   section.geo i
+=======
+  section.head i
+>>>>>>> bem
   {
     margin-right: 25px;
   }
   /* """ Heading """ explore btn */
+<<<<<<< HEAD
   section.explore
+=======
+  section p:last-of-type
+>>>>>>> bem
   {
     margin: 0;
     padding: 40px 90px 40px 90px;

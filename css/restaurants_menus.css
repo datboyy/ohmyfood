@@ -6,12 +6,15 @@
     display: flex;
     width: 90%;
   }
+<<<<<<< HEAD
   header img
   {
     align-self: center;
     margin: 30px 15px;
     width: 50%;
   }
+=======
+>>>>>>> bem
   header i
   {
     font-size: 30px;
@@ -19,15 +22,25 @@
     align-self: center;
   }
   /* Restaurant """ menu """ container */
+<<<<<<< HEAD
   section.menu
+=======
+  .menu
+>>>>>>> bem
   {
     margin-top: 20px;
     width: 100%;
   }
   /* Restaurant """ menu """ image  */
+<<<<<<< HEAD
   section.menu img
   {
     width: 100%;
+=======
+  .section-menu--img
+  {
+    width: 10=%;
+>>>>>>> bem
     height: 300px;
     object-fit: cover;
   }
