@@ -10,54 +10,59 @@
   {
     width: 100%;
     text-align: center;
+    position: relative;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.15);
   }
   header .header--img
   {
-    margin: 30px;
+    margin: 20px 0 10px 0;
     width: 50%;
   }
-  header .header-i--back
+  header .header-back--i
   {
     position: absolute;
     top: 35px;
     left: 15px;
     font-size: 25px;
   }
-  header .header-a--back
-  {
-    color: #000;
-  }
+  header .header-back--a { color: #000; }
   /* """ Localisation """ section */
   section.head
   {
-    margin: 25px 0 0 0 0;
-    padding: 30px 0 20px 0;
+    padding: 0px 0 20px 0;
     text-align: center;
+  }
+  section.head .head-title--h2
+  {
     font-family: 'Roboto';
-    color: #555;
     font-weight: 700;
+    color: #555;
   }
-  section.head-location
+  .head-subtitle--p
   {
-    background-color: #EAEAEA;
+    margin-top: 0;
+    font-weight: 300;
+    font-size: px;
+    font-family: Roboto;
   }
-  section.head i
+  section.head .head-location
   {
-    margin-right: 25px;
+    padding: 15px 0 15px 0;
+    font-family: 'Roboto';
   }
+  section.head .head-location--i { margin-right: 25px; }
   /* """ Heading """ explore btn */
   section.head p:last-of-type
   {
     margin: 0;
-    padding: 40px 90px 40px 90px;
-    background-color: #F6F6F6;
+    padding: 10px 90px 15px 90px;
     text-align: center;
   }
   /* """ Heading """ explore presentation title text */
   section.explore h2
   {
     font-family: 'Roboto';
-    font-weight: 00;
+    font-weight: 300;
     margin: 0;
   }
   /* """ Heading explore subtitle */
@@ -68,19 +73,19 @@
     font-family: 'Roboto';
   }
   /* """ Explore button */
-  section p.explore-btn-container
-  {
-    margin-bottom: 40px;
-  }
+  section p.explore-btn-container { margin-bottom: 40px; }
   section p a.explore-btn
   {
     display: block;
     padding: 20px 0 20px 0;
+    margin-bottom: 30px;
     background: linear-gradient(0deg, rgba(147,86,220,1) 24%,
                                       rgba(255,121,218,1) 100%);
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25);
     border-radius: 40px;
     font-family:"Roboto";
     font-weight: 700;
     color: #FFF;
+    cursor: pointer;
   }
 }
