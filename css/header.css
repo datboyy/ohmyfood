@@ -5,13 +5,15 @@
  */
 @media (max-width: 768px)
 {
-  /* Header, header logo */
+  /*
+   * Header, header logo
+   */
   header
   {
     width: 100%;
     text-align: center;
     position: relative;
-    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.15);
+    box-shadow: 5px 16px 15px -10px rgba(0,0,0,0.15);
   }
   header .header--img
   {
@@ -26,7 +28,9 @@
     font-size: 25px;
   }
   header .header-back--a { color: #000; }
-  /* """ Localisation """ section */
+  /*
+   * """ Localisation """ section
+   */
   section.head
   {
     padding: 0px 0 20px 0;
@@ -59,7 +63,7 @@
     text-align: center;
   }
   /* """ Heading """ explore presentation title text */
-  section.explore h2
+  section.explore--title
   {
     font-family: 'Roboto';
     font-weight: 300;

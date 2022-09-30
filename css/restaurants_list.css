@@ -1,6 +1,8 @@
 @media (max-width: 768px)
 {
-  /* """ Restaurants """ sections */
+  /*
+  * """ Restaurants """ sections
+  */
   section.restaurants
   {
     background-color: #F6F6F6;
@@ -9,9 +11,8 @@
   /* """ Restaurants """ card element */
   section.restaurants .restaurant .card
   {
-    width: 90%;
-    margin: auto;
-    margin: 0 auto 30px auto;
+    width: 95%;
+    margin: 0 auto 20px auto;
   }
   /** """ Restaurants """ card """ new """ mention */
   section.restaurants .restaurant .card .new
@@ -21,12 +22,12 @@
     padding: 5px 8px 5px 8px;
     right: 60px;
     background-color: #99E2D0;
-    color: #2DA285;
     font-family: Roboto;
     font-weight: 500;
+    color: #2DA285;
+
   }
-  /** """ Restaurants cards content is a flex line */
-  section.restaurants .restaurant .card .flex { display: flex; }
+  section.restaurants .restaurant .card .flex { display: flex; }  /** """ Restaurants cards content is a flex line */
   section.restaurants .restaurant .card .flex div:first-of-type{ flex: 1; }
   section.restaurants .restaurant .card .flex div:last-of-type
   {
