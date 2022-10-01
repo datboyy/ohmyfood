@@ -25,34 +25,26 @@
   /* """ Menu """ card title container */
   section.menu .menu-card .menu-card-title--div { display: flex; }
   /* """ Menu """ card title */
-  section.menu .menu-card h2
+  section.menu .menu-card-title--h2
   {
     padding-left: 20px;
     font-family: "Shrikhand";
-    font-size: 35px;
+    font-size: 30px;
     flex: 1;
   }
   /* """ Menu """ card heart icon */
-  section.menu .menu-card i
+  section.menu .menu-card-heart-icon--i
   {
     margin-right: 20px;
     align-self: center;
     font-size: 30px;
   }
-  section.menu .menu-card .card p
-  {
-    display: flex;
-    margin-top: 5px;
-    font-family: 'Roboto';
-  }
-  section.menu .menu-card p span:first-of-type { flex: 1; }
-  section.menu .menu-card p span:last-of-type { font-weight: bold; }
   /*
    *
    * Uniq card element that represents a restaurant menu item
    *
   */
-  /* """ Menu """ card subtitle */
+  /* """ Menu """ card category */
   section.menu .menu-card-category
   {
     font-family: 'Roboto';
@@ -64,5 +56,64 @@
     height: 3px;
     margin-top: -10px;
     background-color: #92E2D0;
+  }
+  /* """ Menu cards inner spacing */
+  .card--restaurant-left { width: 70%; }
+  .card--restaurant-pdg { padding: 15px; }
+  /* """ Menu """ card titles */
+  section.menu .card-restaurant .card-title { margin: 0 0 5px; }
+  /* """ Menu """ card description */
+  section.menu .card-restaurant .card-description {
+    margin: 0px;
+    font-family: 'Roboto';
+   }
+  /* """ Menu """ collapsed card collapsed price container */
+  section.menu .card-price {
+    width: 20%;
+    text-align: right;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.10);
+  }
+  /* """ Menu """ collapsed card collapsed price item */
+  section.menu .card-price--p
+  {
+    margin: 0;
+    padding-top: 25px;
+    font-family: 'Roboto';
+    font-weight: 600;
+  }
+  /*
+   * Restaurant card """ menu """ item animation
+   */
+  section.menu .card-restaurant:hover .card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  section.menu .card-restaurant-container:hover .card-restaurant {
+    width: 75%;
+    flex: 1;
+  }
+  section.menu .card-restaurant-container:hover .card-price {
+    width: 5%;
+    margin-right: 0;
+    border-radius: 0;
+  }
+  section.menu .card-restaurant-container:hover .card-price {
+  }
+  section.menu .card-restaurant-container:hover .card-hovered-area
+  {
+    width: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #99E2D0;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.10);
+    color: #fff;
+  }
+  section.menu .card-restaurant-container:hover .card-hovered-area .card-restaurant-check--i { font-size: 22px; }
+  {
+
   }
 }
