@@ -8,7 +8,7 @@
   section.menu { width: 100%; }
   section.menu .section-menu--img
   {
-    width: 100;
+    width: 100%;
     height: 300px;
     object-fit: cover;
   }
