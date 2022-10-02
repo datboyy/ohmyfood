@@ -71,15 +71,15 @@
     margin: 0;
   }
   /* """ Heading explore subtitle */
-  section.explore p
+  section.explore .head-subtitle-p
   {
     color: #555;
     margin: 15px;
     font-family: 'Roboto';
   }
   /* """ Explore button */
-  section p.explore-btn-container { margin-bottom: 40px; }
-  section p a.explore-btn
+  section .explore-btn-container { margin-bottom: 40px; }
+  section .explore-btn-a
   {
     width: 250px;
     margin: auto;
