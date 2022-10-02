@@ -6,7 +6,7 @@
    *
   */
   section.menu { width: 100%; }
-  section.menu .section-menu--img
+  section.menu .section-menu-img
   {
     width: 100%;
     height: 300px;
@@ -21,10 +21,12 @@
     background-color: #F1F1F1;
     border-radius: 25px;
     box-shadow: 5px -5px 15px -5px rgba(0,0,0,0.2);  }
+
   /* """ Menu """ card title container */
-  section.menu .menu-card .menu-card-title--div { display: flex; }
+  section.menu .menu-card .menu-card-title-div { display: flex; }
+
   /* """ Menu """ card title */
-  section.menu .menu-card-title--h2
+  section.menu .menu-card-title-h2
   {
     padding-left: 20px;
     font-family: "Shrikhand";
@@ -32,7 +34,7 @@
     flex: 1;
   }
   /* """ Menu """ card heart icon */
-  section.menu .menu-card-heart-icon--i
+  section.menu .menu-card-heart-icon-i
   {
     margin-right: 20px;
     align-self: center;
@@ -60,9 +62,11 @@
     margin-top: -10px;
     background-color: #92E2D0;
   }
+
   /* """ Menu cards inner spacing */
   .card--restaurant-left { width: 70%; }
   .card--restaurant-pdg { padding: 15px; }
+
   /* """ Menu """ card titles */
   section.menu .card-restaurant .card-title-h3 {
     font-family: 'Roboto';
@@ -93,6 +97,7 @@
    * Restaurant card """ menu """ item animation
    */
   section.menu .card-restaurant:hover .card-title {}
+
   section.menu .card-restaurant-container:hover .card-restaurant {
     width: 75%;
     flex: 1;
@@ -121,5 +126,6 @@
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.10);
     color: #fff;
   }
-  section.menu .card-restaurant-container:hover .card-hovered-area .card-restaurant-check--i { font-size: 22px; }
+
+  section.menu .card-restaurant-container:hover .card-hovered-area .card-restaurant-check-i { font-size: 22px; }
 }
