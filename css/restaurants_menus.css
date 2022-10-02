@@ -49,6 +49,10 @@
     font-family: 'Roboto';
     text-transform: uppercase;
   }
+  .card-restaurant
+  {
+    text-overflow: ellipsis;
+  }
   section.menu .menu-card-categ-line--div
   {
     width: 40px;
@@ -60,7 +64,11 @@
   .card--restaurant-left { width: 70%; }
   .card--restaurant-pdg { padding: 15px; }
   /* """ Menu """ card titles */
-  section.menu .card-restaurant .card-title { margin: 0 0 5px; }
+  section.menu .card-restaurant .card-title-h3 {
+    font-family: 'Roboto';
+    margin: 0 0 5px;
+    text-overflow: ellipsis;
+  }
   /* """ Menu """ card description */
   section.menu .card-restaurant .card-description {
     margin: 0px;
@@ -84,14 +92,16 @@
   /*
    * Restaurant card """ menu """ item animation
    */
-  section.menu .card-restaurant:hover .card-title {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+  section.menu .card-restaurant:hover .card-title {}
   section.menu .card-restaurant-container:hover .card-restaurant {
     width: 75%;
     flex: 1;
+  }
+  section.menu .card-restaurant-container:hover .card-title-h3
+  {
+     white-space: nowrap;
+     text-overflow: ellipsis;
+     white-space: nowrap;
   }
   section.menu .card-restaurant-container:hover .card-price {
     width: 5%;
