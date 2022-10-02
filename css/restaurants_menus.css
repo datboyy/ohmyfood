@@ -24,7 +24,10 @@
     box-shadow: 5px -5px 15px -5px rgba(0,0,0,0.2);  }
 
   /* """ Menu """ card title container */
-  section.menu .menu-container .menu-card-title-div { display: flex; }
+  section.menu .menu-container .menu-card-title-div {
+    display: flex;
+    padding-top: 20px;
+  }
 
   /* """ Menu """ card title */
   section.menu .menu-card-title-h2
