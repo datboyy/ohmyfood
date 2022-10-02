@@ -5,26 +5,26 @@
     padding: 15px 0 15px 15px;
     background-color: #353535;
   }
-  footer .footer-title--h1
+  footer .footer-title-h1
   {
     color: white;
     font-family: 'Shrikhand';
     font-size: 20px;
     font-style: italic;
   }
-  footer .footer-links-list--ul
+  footer .footer-links-list-ul
   {
     list-style-type: none;
     padding: 0;
   }
-  footer .footer-links-list--li
+  footer .footer-links-list-li
   {
     color: #fff;
    font-family: 'Roboto';
     margin-bottom: 10px;
     font-weight: 500;
   }
-  footer .footer-icon--i
+  footer .footer-icon-i
   {
     margin-right: 10px;
   }

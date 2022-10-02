@@ -28,54 +28,66 @@
 
     -->
     <header class="header">
-      <a href="../index.html" class="header-back--a">
-        <i class="header-back--i fa-solid fa-arrow-left"></i>
+      <a href="../index.html" class="header-back-a">
+        <i class="header-back-i fa-solid fa-arrow-left"></i>
       </a>
-      <img class="header--img" src="../assets/logo/ohmyfood.png" />
+      <img class="header-img" src="../assets/logo/ohmyfood.png" />
     </header>
     <main>
       <!--
 
-            Restaurant menu
+            Restaurant menu "" entrées ""
 
       -->
       <section class="menu">
-        <img class="section-menu--img" src="../assets/restaurants/4.jpg" alt="Image de nourriture" />
-        <div class="menu-card">
+        <img class="section-menu-img" src="../assets/restaurants/4.jpg" alt="Image de nourriture" />
+        <div class="menu-container">
           <!--
 
             Restaurant title
 
           -->
-          <div class="menu-card-title--div">
-            <h2 class="menu-card-title--h2">Le délices des sens</h2>
-            <i class="menu-card-heart-icon--i fa-regular fa-heart"></i>
+          <div class="menu-card-title-div">
+            <h2 class="menu-card-title-h2">Le délices des sens</h2>
+            <i class="menu-card-heart-icon-i fa-regular fa-heart"></i>
           </div> <!-- ./title -->
           <!--
               Restaurant menu category "" entrées ""
           -->
-          <p class="menu-card-category overall-restaurant-pres-margin">
+          <div class="menu-card-category-div overall-restaurant-pres-margin">
             Entrées
-            <div class="menu-card-categ-line--div overall-restaurant-pres-margin"></div>
-          </p> <!-- /.subtitle -->
+            <div class="menu-card-categ-line-div overall-restaurant-pres-margin"></div>
+          </div> <!-- /.menu-card-category-div -->
+
           <!--
 
               Card #1 - Tartare de thon
 
+                @NOTE: To implement the hovering animation, we need to break the
+                       menu card into three parts. The two first part are displayed
+                       default. The third one is hidden. On `card_restaurant'
+                       hovering, the first two card spacing is reduced, to display
+                       the third one, with the green background & the check icon.
           -->
+
+          <!-- First card part -->
           <div class="card-restaurant-container d-flex">
             <div class="card card-restaurant card--restaurant-left card--restaurant-pdg overall-restaurant-pres-margin
-                        mrg-right-none radius-top-right-none radius-bottom-right-none">
+                        restaurants-cards-margin mrg-right-none radius-top-right-none radius-bottom-right-none">
               <h3 class="card-title-h3">Tartare de thon</h3>
               <p class="card-description">
                 Assaisonné de yuzu
               </p>
             </div> <!-- /.card -->
-            <div class="card card--restaurant-pdg card-price overall-restaurant-pres-margin mrg-left-none">
-              <p class="card-price--p">20€</p>
+
+            <!-- Second card part -->
+            <div class="card card--restaurant-pdg card--price overall-restaurant-pres-margin restaurants-cards-margin mrg-left-none">
+              <p class="card-price-p">20€</p>
             </div> <!-- /.card .card-price -->
-            <div class="card card--restaurant-pdg card-hovered-area d-none overall-restaurant-pres-margin mrg-left-none">
-              <i class="card-restaurant-check--i fa-sharp fa-solid fa-circle-check"></i>
+
+            <!-- Third card part -->
+            <div class="card card--restaurant-pdg card-hovered-area d-none overall-restaurant-pres-margin restaurants-cards-margin mrg-left-none">
+              <i class="card-restaurant-check-i fa-sharp fa-solid fa-circle-check"></i>
             </div> <!--/.card .card-hovered-area -->
           </div> <!-- ./card-restaurant-container card-flex -->
           <!--
@@ -85,17 +97,17 @@
           -->
           <div class="card-restaurant-container d-flex">
             <div class="card card-restaurant card--restaurant-left card--restaurant-pdg overall-restaurant-pres-margin
-                        mrg-right-none radius-top-right-none radius-bottom-right-none">
+                        restaurants-cards-margin mrg-right-none radius-top-right-none radius-bottom-right-none">
               <h3 class="card-title-h3">Bouchée de homard croustillant</h3>
               <p class="card-description">
                 Et sa farandole de petits légumes
               </p>
             </div> <!-- /.card -->
-            <div class="card card--restaurant-pdg card-price overall-restaurant-pres-margin mrg-left-none">
-              <p class="card-price--p">25€</p>
+            <div class="card card--restaurant-pdg card--price overall-restaurant-pres-margin restaurants-cards-margin mrg-left-none">
+              <p class="card-price-p">25€</p>
             </div> <!-- /.card .card-price -->
-            <div class="card card--restaurant-pdg card-hovered-area d-none overall-restaurant-pres-margin mrg-left-none">
-              <i class="card-restaurant-check--i fa-sharp fa-solid fa-circle-check"></i>
+            <div class="card card--restaurant-pdg card-hovered-area d-none overall-restaurant-pres-margin restaurants-cards-margin mrg-left-none">
+              <i class="card-restaurant-check-i fa-sharp fa-solid fa-circle-check"></i>
             </div> <!--/.card .card-hovered-area -->
           </div> <!-- ./card-restaurant-container card-flex -->
           <!--
@@ -103,22 +115,179 @@
               Card #3 - Velouté de cèpes
 
           -->
-          <div class="card-restaurant-container d-flex">
+          <div class="card-restaurant-container card--restaurant-mrg-btm d-flex">
             <div class="card card-restaurant card--restaurant-left card--restaurant-pdg overall-restaurant-pres-margin
-                        mrg-right-none radius-top-right-none radius-bottom-right-none">
+                        restaurants-cards-margin mrg-right-none radius-top-right-none radius-bottom-right-none">
               <h3 class="card-title-h3">Velouté de cèpes</h3>
               <p class="card-description">
                 Aux truffes
               </p>
             </div> <!-- /.card -->
-            <div class="card card--restaurant-pdg card-price overall-restaurant-pres-margin mrg-left-none">
-              <p class="card-price--p">35€</p>
+            <div class="card card--restaurant-pdg card--price overall-restaurant-pres-margin restaurants-cards-margin mrg-left-none">
+              <p class="card-price-p">35€</p>
             </div> <!-- /.card .card-price -->
-            <div class="card card--restaurant-pdg card-hovered-area d-none overall-restaurant-pres-margin mrg-left-none">
-              <i class="card-restaurant-check--i fa-sharp fa-solid fa-circle-check"></i>
+            <div class="card card--restaurant-pdg card-hovered-area d-none overall-restaurant-pres-margin restaurants-cards-margin mrg-left-none">
+              <i class="card-restaurant-check-i fa-sharp fa-solid fa-circle-check"></i>
             </div> <!--/.card .card-hovered-area -->
           </div> <!-- ./card-restaurant-container card-flex -->
-        </div> <!-- /.menu-card -->
+
+
+          <!--
+
+                Restaurant menu "" plats ""
+
+          -->
+          <div class="menu-card-category-div overall-restaurant-pres-margin">
+            Plats
+            <div class="menu-card-categ-line-div overall-restaurant-pres-margin"></div>
+          </div> <!-- /.menu-card-category-div -->
+
+          <!--
+
+              Card #1 - Poulet rôti aux herbes de provence
+
+          -->
+          <div class="card-restaurant-container d-flex">
+            <div class="card card-restaurant card--restaurant-left card--restaurant-pdg overall-restaurant-pres-margin
+                        restaurants-cards-margin mrg-right-none radius-top-right-none radius-bottom-right-none">
+              <h3 class="card-title-h3">Poulet rôti aux herbes de provence</h3>
+              <p class="card-description">
+                Et sa crême de truffe
+              </p>
+            </div> <!-- /.card -->
+            <div class="card card--restaurant-pdg card--price overall-restaurant-pres-margin restaurants-cards-margin mrg-left-none">
+              <p class="card-price-p">40€</p>
+            </div> <!-- /.card .card-price -->
+            <div class="card card--restaurant-pdg card-hovered-area d-none overall-restaurant-pres-margin mrg-left-none">
+              <i class="card-restaurant-check-i fa-sharp fa-solid fa-circle-check"></i>
+            </div> <!--/.card .card-hovered-area -->
+          </div> <!-- ./card-restaurant-container card-flex -->
+
+          <!--
+
+              Card #2 - Langoustine rôtie
+
+          -->
+          <div class="card-restaurant-container d-flex">
+            <div class="card card-restaurant card--restaurant-left card--restaurant-pdg overall-restaurant-pres-margin
+                        restaurants-cards-margin mrg-right-none radius-top-right-none radius-bottom-right-none">
+              <h3 class="card-title-h3">Langoustine rôtie</h3>
+              <p class="card-description">
+                Et ses légumes de saison
+              </p>
+            </div> <!-- /.card -->
+            <div class="card card--restaurant-pdg card--price overall-restaurant-pres-margin restaurants-cards-margin mrg-left-none">
+              <p class="card-price-p">35€</p>
+            </div> <!-- /.card .card-price -->
+            <div class="card card--restaurant-pdg card-hovered-area d-none overall-restaurant-pres-margin restaurants-cards-margin mrg-left-none">
+              <i class="card-restaurant-check-i fa-sharp fa-solid fa-circle-check"></i>
+            </div> <!--/.card .card-hovered-area -->
+          </div> <!-- ./card-restaurant-container card-flex -->
+
+          <!--
+
+              Card #3 - Côte de boeuf angus
+
+          -->
+          <div class="card-restaurant-container card--restaurant-mrg-btm d-flex">
+            <div class="card card-restaurant card--restaurant-left card--restaurant-pdg overall-restaurant-pres-margin
+                        restaurants-cards-margin mrg-right-none radius-top-right-none radius-bottom-right-none">
+              <h3 class="card-title-h3">Côte de boeuf angus</h3>
+              <p class="card-description">
+                Et sa purée de panais
+              </p>
+            </div> <!-- /.card -->
+            <div class="card card--restaurant-pdg card--price overall-restaurant-pres-margin restaurants-cards-margin mrg-left-none">
+              <p class="card-price-p">35€</p>
+            </div> <!-- /.card .card-price -->
+            <div class="card card--restaurant-pdg card-hovered-area d-none overall-restaurant-pres-margin restaurants-cards-margin mrg-left-none">
+              <i class="card-restaurant-check-i fa-sharp fa-solid fa-circle-check"></i>
+            </div> <!--/.card .card-hovered-area -->
+          </div> <!-- ./card-restaurant-container card-flex -->
+
+          <!--
+
+                Restaurant menu "" desserts ""
+
+          -->
+          <div class="menu-card-category-div overall-restaurant-pres-margin">
+            Desserts
+            <div class="menu-card-categ-line-div overall-restaurant-pres-margin"></div>
+          </div> <!-- /.menu-card-category-div -->
+
+
+          <!--
+
+              Card #1 - Farandole de desserts
+
+          -->
+          <div class="card-restaurant-container d-flex">
+            <div class="card card-restaurant card--restaurant-left card--restaurant-pdg overall-restaurant-pres-margin
+                        restaurants-cards-margin mrg-right-none radius-top-right-none radius-bottom-right-none">
+              <h3 class="card-title-h3">Farandole de desserts</h3>
+              <p class="card-description">
+                Du chef
+              </p>
+            </div> <!-- /.card -->
+            <div class="card card--restaurant-pdg card--price overall-restaurant-pres-margin restaurants-cards-margin mrg-left-none">
+              <p class="card-price-p">18€</p>
+            </div> <!-- /.card .card-price -->
+            <div class="card card--restaurant-pdg card-hovered-area d-none overall-restaurant-pres-margin restaurants-cards-margin mrg-left-none">
+              <i class="card-restaurant-check-i fa-sharp fa-solid fa-circle-check"></i>
+            </div> <!--/.card .card-hovered-area -->
+          </div> <!-- ./card-restaurant-container card-flex -->
+
+          <!--
+
+              Card #2 - Crême brulée
+
+          -->
+          <div class="card-restaurant-container d-flex">
+            <div class="card card-restaurant card--restaurant-left card--restaurant-pdg overall-restaurant-pres-margin
+                        restaurants-cards-margin mrg-right-none radius-top-right-none radius-bottom-right-none">
+              <h3 class="card-title-h3">Crême brûlée</h3>
+              <p class="card-description">
+                Revisitée
+              </p>
+            </div> <!-- /.card -->
+            <div class="card card--restaurant-pdg card--price overall-restaurant-pres-margin restaurants-cards-margin mrg-left-none">
+              <p class="card-price-p">22€</p>
+            </div> <!-- /.card .card-price -->
+            <div class="card card--restaurant-pdg card-hovered-area d-none overall-restaurant-pres-margin restaurants-cards-margin mrg-left-none">
+              <i class="card-restaurant-check-i fa-sharp fa-solid fa-circle-check"></i>
+            </div> <!--/.card .card-hovered-area -->
+          </div> <!-- ./card-restaurant-container card-flex -->
+
+          <!--
+
+              Card #3 - Tiramisu
+
+          -->
+          <div class="card-restaurant-container card--restaurant-mrg-btm d-flex">
+            <div class="card card-restaurant card--restaurant-left card--restaurant-pdg overall-restaurant-pres-margin
+                        restaurants-cards-margin mrg-right-none radius-top-right-none radius-bottom-right-none">
+              <h3 class="card-title-h3">Tiramisu</h3>
+              <p class="card-description">
+                A la noisette
+              </p>
+            </div> <!-- /.card -->
+            <div class="card card--restaurant-pdg card--price overall-restaurant-pres-margin restaurants-cards-margin mrg-left-none">
+              <p class="card-price-p">23€</p>
+            </div> <!-- /.card .card-price -->
+            <div class="card card--restaurant-pdg card-hovered-area d-none overall-restaurant-pres-margin restaurants-cards-margin mrg-left-none">
+              <i class="card-restaurant-check-i fa-sharp fa-solid fa-circle-check"></i>
+            </div> <!--/.card .card-hovered-area -->
+          </div> <!-- ./card-restaurant-container card-flex -->
+
+          <!--
+              Buy button
+          -->
+          <p class="action-button-container">
+            <a class="action-button-container-a">Commander</a>
+          </p> <!-- /explore-btn-container -->
+
+        </div> <!-- /.menu-container -->
+
       </section> <!-- /.menu -->
     </main>
     <!--
@@ -127,12 +296,12 @@
 
     -->
     <footer class="footer--restaurants-pages">
-      <h1 class="footer-title--h1">ohmyfood</h1>
-      <ul class="footer-links-list--ul">
-        <li class="footer-links-list--li"><i class="footer-icon--i fa-solid fa-utensils"></i>Poposer un restaurant</li>
-        <li class="footer-links-list--li"><i class="footer-icon--i fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
-        <li class="footer-links-list--li">Mentions légales</li>
-        <li class="footer-links-list--li">Contact</li>
+      <h1 class="footer-title-h1">ohmyfood</h1>
+      <ul class="footer-links-list-ul">
+        <li class="footer-links-list-li"><i class="footer-icon-i fa-solid fa-utensils"></i>Poposer un restaurant</li>
+        <li class="footer-links-list-li"><i class="footer-icon-i fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
+        <li class="footer-links-list-li">Mentions légales</li>
+        <li class="footer-links-list-li">Contact</li>
       </ul>
     </footer>
   </body>

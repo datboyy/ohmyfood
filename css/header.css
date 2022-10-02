@@ -15,19 +15,19 @@
     position: relative;
     box-shadow: 5px 16px 15px -10px rgba(0,0,0,0.15);
   }
-  header .header--img
+  header .header-img
   {
     margin: 20px 0 10px 0;
     width: 50%;
   }
-  header .header-back--i
+  header .header-back-i
   {
     position: absolute;
     top: 25px;
     left: 15px;
     font-size: 25px;
   }
-  header .header-back--a { color: #000; }
+  header .header-back-a { color: #000; }
   /*
    * """ Localisation """ section
    */
@@ -36,13 +36,13 @@
     padding: 0px 0 20px 0;
     text-align: center;
   }
-  section.head .head-title--h2
+  section.head .head-title-h2
   {
     font-family: 'Roboto';
     font-weight: 700;
     color: #555;
   }
-  section.head .menu-card-heart-icon--i {}
+  section.head .menu-card-heart-icon-i {}
   .head-subtitle--p
   {
     margin-top: 0;
@@ -55,7 +55,7 @@
     padding: 15px 0 15px 0;
     font-family: 'Roboto';
   }
-  section.head .head-location--i { margin-right: 25px; }
+  section.head .head-location-i { margin-right: 25px; }
   /* """ Heading """ explore btn */
   section.head p:last-of-type
   {
@@ -64,35 +64,17 @@
     text-align: center;
   }
   /* """ Heading """ explore presentation title text */
-  section.explore--title
+  section.explore-title
   {
     font-family: 'Roboto';
     font-weight: 300;
     margin: 0;
   }
   /* """ Heading explore subtitle */
-  section.explore p
+  section.explore .head-subtitle-p
   {
     color: #555;
     margin: 15px;
     font-family: 'Roboto';
-  }
-  /* """ Explore button */
-  section p.explore-btn-container { margin-bottom: 40px; }
-  section p a.explore-btn
-  {
-    width: 250px;
-    margin: auto;
-    display: block;
-    padding: 20px 0 20px 0;
-    margin-bottom: 30px;
-    background: linear-gradient(0deg, rgba(147,86,220,1) 24%,
-                                      rgba(255,121,218,1) 100%);
-    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25);
-    border-radius: 40px;
-    font-family:"Roboto";
-    font-weight: 700;
-    color: #FFF;
-    cursor: pointer;
   }
 }
