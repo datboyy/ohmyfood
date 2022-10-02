@@ -75,18 +75,22 @@
 
   /* """ Menu """ card titles */
   section.menu .card-restaurant .card-title-h3 {
-    font-family: 'Roboto';
     margin: 0 0 5px;
+    font-family: 'Roboto';
+    overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
   }
   /* """ Menu """ card description */
   section.menu .card-restaurant .card-description {
     margin: 0px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     font-family: 'Roboto';
    }
   /* """ Menu """ collapsed card collapsed price container */
   section.menu .card--price {
-    width: 20%;
+    width: 10%;
     text-align: right;
     border-radius: 0 20px 20px 0;
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.10);
@@ -102,25 +106,28 @@
   /*
    * Restaurant card """ menu """ item animation
    */
+  section.menu .card--restaurant-left
+  {
+    text-overflow: ellipsis;
+    flex-shrink: 0;
+  }
   section.menu .card-restaurant-container:hover .card-restaurant {
-    width: 75%;
-    flex: 1;
+    width: 50%;
   }
   section.menu .card-restaurant-container .card-title-h3
   {
-     white-space: nowrap;
      text-overflow: ellipsis;
-     white-space: nowrap;
   }
   section.menu .card-restaurant-container:hover .card--price {
-    width: 5%;
+    flex-shrink: 0;
     margin-right: 0;
     border-radius: 0;
   }
   section.menu .card-restaurant-container:hover .card-hovered-area
   {
-    width: 8%;
+    width: 11%;
     display: flex;
+    flex-shrink: 0;
     align-items: center;
     justify-content: center;
     background-color: #99E2D0;
