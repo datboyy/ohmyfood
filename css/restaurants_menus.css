@@ -12,18 +12,19 @@
     height: 300px;
     object-fit: cover;
   }
-  section.menu .menu-card
+  section.menu .menu-container
   {
     width: 100%;
     position: relative;
     z-index: 1;
     margin-top: -25px;
+    padding-bottom: 30px;
     background-color: #F1F1F1;
     border-radius: 25px;
     box-shadow: 5px -5px 15px -5px rgba(0,0,0,0.2);  }
 
   /* """ Menu """ card title container */
-  section.menu .menu-card .menu-card-title-div { display: flex; }
+  section.menu .menu-container .menu-card-title-div { display: flex; }
 
   /* """ Menu """ card title */
   section.menu .menu-card-title-h2
@@ -46,7 +47,7 @@
    *
   */
   /* """ Menu """ card category */
-  section.menu .menu-card-category
+  section.menu .menu-card-category-div
   {
     font-family: 'Roboto';
     text-transform: uppercase;
@@ -55,17 +56,22 @@
   {
     text-overflow: ellipsis;
   }
-  section.menu .menu-card-categ-line--div
+  .restaurants-cards-margin
+  {
+    margin-bottom: 5px;
+  }
+  section.menu .menu-card-categ-line-div
   {
     width: 40px;
     height: 3px;
-    margin-top: -10px;
+    margin: 10px 0 -10px;
     background-color: #92E2D0;
   }
 
-  /* """ Menu cards inner spacing */
+  /* """ Menu cards inner & outter spacing */
   .card--restaurant-left { width: 70%; }
   .card--restaurant-pdg { padding: 15px; }
+  .card--restaurant-mrg-btm { margin-bottom: 40px; }
 
   /* """ Menu """ card titles */
   section.menu .card-restaurant .card-title-h3 {
@@ -79,14 +85,14 @@
     font-family: 'Roboto';
    }
   /* """ Menu """ collapsed card collapsed price container */
-  section.menu .card-price {
+  section.menu .card--price {
     width: 20%;
     text-align: right;
     border-radius: 0 20px 20px 0;
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.10);
   }
   /* """ Menu """ collapsed card collapsed price item */
-  section.menu .card-price--p
+  section.menu .card-price-p
   {
     margin: 0;
     padding-top: 25px;
@@ -96,24 +102,20 @@
   /*
    * Restaurant card """ menu """ item animation
    */
-  section.menu .card-restaurant:hover .card-title {}
-
   section.menu .card-restaurant-container:hover .card-restaurant {
     width: 75%;
     flex: 1;
   }
-  section.menu .card-restaurant-container:hover .card-title-h3
+  section.menu .card-restaurant-container .card-title-h3
   {
      white-space: nowrap;
      text-overflow: ellipsis;
      white-space: nowrap;
   }
-  section.menu .card-restaurant-container:hover .card-price {
+  section.menu .card-restaurant-container:hover .card--price {
     width: 5%;
     margin-right: 0;
     border-radius: 0;
-  }
-  section.menu .card-restaurant-container:hover .card-price {
   }
   section.menu .card-restaurant-container:hover .card-hovered-area
   {
