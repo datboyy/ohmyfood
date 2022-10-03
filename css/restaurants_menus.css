@@ -72,7 +72,7 @@
   }
 
   /* """ Menu cards inner & outter spacing */
-  .card--restaurant-left { width: 70%; }
+  .card--restaurant-left { width: 80%; }
   .card--restaurant-pdg { padding: 15px; }
   .card--restaurant-mrg-btm { margin-bottom: 40px; }
 
@@ -115,7 +115,7 @@
     flex-shrink: 0;
   }
   section.menu .card-restaurant-container:hover .card-restaurant {
-    width: 50%;
+    width: 60%;
   }
   section.menu .card-restaurant-container .card-title-h3
   {
@@ -128,7 +128,7 @@
   }
   section.menu .card-restaurant-container:hover .card-hovered-area
   {
-    width: 11%;
+    width: 12%;
     display: flex;
     flex-shrink: 0;
     align-items: center;
