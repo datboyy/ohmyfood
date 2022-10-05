@@ -5,8 +5,12 @@
    * Overall restaurant menu container
    *
   */
+
+  /*
+   * Restaurants menus pages heading titles
+   */
   section.menu { width: 100%; }
-  section.menu .section-menu-img
+  section.menu .menu-card__img
   {
     width: 100%;
     height: 300px;
@@ -22,15 +26,13 @@
     background-color: #F1F1F1;
     border-radius: 25px;
     box-shadow: 5px -5px 15px -5px rgba(0,0,0,0.2);  }
-
   /* """ Menu """ card title container */
-  section.menu .menu-container .menu-card-title-div {
+  section.menu .menu-card__title-container {
     display: flex;
     padding-top: 20px;
   }
-
   /* """ Menu """ card title */
-  section.menu .menu-card-title-h2
+  section.menu .menu-card__title
   {
     padding-left: 20px;
     font-family: "Shrikhand";
@@ -38,7 +40,7 @@
     flex: 1;
   }
   /* """ Menu """ card heart icon */
-  section.menu .menu-card-heart-icon-i
+  section.menu .menu-card__heart-icon
   {
     margin-right: 40px;
     align-self: center;
@@ -49,35 +51,30 @@
    * Uniq card element that represents a restaurant menu item
    *
   */
+  /* """ Menu """ card restaurant container */
+  .card-restaurant-container { width: 90%; }
+  /* """ Menu """ card variation */
+  .card--restaurant { text-overflow: ellipsis; }
   /* """ Menu """ card category */
-  section.menu .menu-card-category-div
+  section.menu .category
   {
     font-family: 'Roboto';
     text-transform: uppercase;
   }
-  .card-restaurant
-  {
-    text-overflow: ellipsis;
-  }
-  .restaurants-cards-margin
-  {
-    margin-bottom: 5px;
-  }
-  section.menu .menu-card-categ-line-div
+  .restaurants-cards-margin { margin-bottom: 5px; }
+  section.menu .category__line
   {
     width: 40px;
     height: 3px;
     margin: 10px 0 -10px;
     background-color: #92E2D0;
   }
-
   /* """ Menu cards inner & outter spacing */
   .card--restaurant-left { width: 80%; }
   .card--restaurant-pdg { padding: 15px; }
   .card--restaurant-mrg-btm { margin-bottom: 40px; }
-
   /* """ Menu """ card titles */
-  section.menu .card-restaurant .card-title-h3 {
+section.menu .card--restaurant__title {
     margin: 0 0 5px;
     font-family: 'Roboto';
     overflow: hidden;
@@ -85,21 +82,21 @@
     white-space: nowrap;
   }
   /* """ Menu """ card description */
-  section.menu .card-restaurant .card-description {
+  section.menu .card--restaurant__description {
     margin: 0px;
     white-space: nowrap;
     text-overflow: ellipsis;
     font-family: 'Roboto';
    }
   /* """ Menu """ collapsed card collapsed price container */
-  section.menu .card--price {
+  section.menu .card--restaurant__price {
     width: 10%;
     text-align: right;
     border-radius: 0 20px 20px 0;
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.10);
   }
   /* """ Menu """ collapsed card collapsed price item */
-  section.menu .card-price-p
+  section.menu .card--restaurant__price__text
   {
     margin: 0;
     padding-top: 25px;
@@ -108,27 +105,31 @@
   }
   /*
    * Restaurant card """ menu """ item animation
-   */
+  */
   section.menu .card--restaurant-left
   {
     text-overflow: ellipsis;
     flex-shrink: 0;
   }
-  section.menu .card-restaurant-container:hover .card-restaurant {
-    width: 60%;
-  }
-  section.menu .card-restaurant-container .card-title-h3
-  {
-     text-overflow: ellipsis;
-  }
-  section.menu .card-restaurant-container:hover .card--price {
+  section.menu .card--restaurant .card--restaurant-left { width: 80%; }
+  section.menu .card--restaurant__title { text-overflow: ellipsis; }
+  section.menu .card--restaurant__card-price {
+    width: 10%;
     flex-shrink: 0;
     margin-right: 0;
     border-radius: 0;
   }
+  section.menu .card-restaurant-container:hover .card--restaurant-left
+  {
+    width: 63%;
+  }
+  section.menu .card-restaurant-container:hover .card--restaurant__price
+  {
+    border-radius: 0
+  }
   section.menu .card-restaurant-container:hover .card-hovered-area
   {
-    width: 12%;
+    width: 10%;
     display: flex;
     flex-shrink: 0;
     align-items: center;
@@ -137,6 +138,8 @@
     border-radius: 0 20px 20px 0;
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.10);
     color: #fff;
+    /* FIXME */
+    margin-left: -5%;
   }
 
   section.menu .card-restaurant-container:hover .card-hovered-area .card-restaurant-check-i { font-size: 22px; }
