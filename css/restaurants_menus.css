@@ -25,7 +25,10 @@
     padding-bottom: 30px;
     background-color: #F1F1F1;
     border-radius: 25px;
-    box-shadow: 5px -5px 15px -5px rgba(0,0,0,0.2);  }
+    box-shadow: 5px -5px 15px -5px rgba(0,0,0,0.2);
+    position: relative;
+  }
+
   /* """ Menu """ card title container */
   section.menu .menu-card__title-container {
     display: flex;
