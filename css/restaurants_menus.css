@@ -2,17 +2,13 @@
   /*
    * Overall restaurant menu container
    *
-   */
-  /* Restaurants menus pages heading titles
-   */
-  section.menu {
-    width: 100%; }
-
+   */ }
+section.menu {
+  width: 100%; }
   section.menu .menu-card__img {
     width: 100%;
     height: 300px;
     object-fit: cover; }
-
   section.menu .menu-container {
     width: 100%;
     position: relative;
@@ -22,126 +18,80 @@
     background-color: #F1F1F1;
     border-radius: 25px;
     box-shadow: 5px -5px 15px -5px rgba(0, 0, 0, 0.2); }
-
-  /* """ Menu """ card title container */
-  section.menu .menu-card__title-container {
-    display: flex;
-    padding-top: 20px; }
-
-  /* """ Menu """ card title */
-  section.menu .menu-card__title {
-    padding-left: 20px;
-    font-family: "Shrikhand";
-    font-size: 30px;
-    flex: 1; }
-
-  /* """ Menu """ card heart icon */
-  section.menu .menu-card__heart-icon {
-    margin-right: 40px;
-    align-self: center;
-    font-size: 30px; }
-
-  /* Uniq card element that represents a restaurant menu item
-   */
-  /* """ Menu """ card restaurant container */
-  .card-restaurant-container {
-    width: 90%; }
-
-  /* """ Menu """ card variation */
-  .card--restaurant {
-    text-overflow: ellipsis; }
-
-  /* """ Menu """ card category */
+    section.menu .menu-container .menu-card__title-container {
+      display: flex;
+      padding-top: 20px; }
+    section.menu .menu-container .menu-card__title {
+      padding-left: 20px;
+      font-family: "Shrikhand";
+      font-size: 30px;
+      flex: 1; }
+    section.menu .menu-container .menu-card__heart-icon {
+      margin-right: 40px;
+      align-self: center;
+      font-size: 30px; }
   section.menu .category {
     font-family: "Roboto";
     text-transform: uppercase; }
-
-  .restaurants-cards-margin {
-    margin-bottom: 5px; }
-
   section.menu .category__line {
     width: 40px;
     height: 3px;
     margin: 10px 0 -10px;
     background-color: #92E2D0; }
-
-  /* """ Menu cards inner & outter spacing */
-  .card--restaurant-left {
-    width: 80%; }
-
-  .card--restaurant-pdg {
+  section.menu .card--restaurant-pdg {
     padding: 15px; }
-
-  .card--restaurant-mrg-btm {
-    margin-bottom: 40px;
-    /* """ Menu """ card titles */ }
-
-  section.menu .card--restaurant__title {
-    margin: 0 0 5px;
-    font-family: "Roboto";
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap; }
-
-  /* """ Menu """ card description */
-  section.menu .card--restaurant__description {
-    margin: 0px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    font-family: "Roboto"; }
-
-  /* """ Menu """ collapsed card collapsed price container */
-  section.menu .card--restaurant__price {
-    width: 10%;
-    text-align: right;
-    border-radius: 0 20px 20px 0;
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1); }
-
-  /* """ Menu """ collapsed card collapsed price item */
-  section.menu .card--restaurant__price__text {
-    margin: 0;
-    padding-top: 25px;
-    font-family: "Roboto";
-    font-weight: 600; }
-
-  /* Restaurant card """ menu """ item animation
-   */
-  section.menu .card--restaurant-left {
-    text-overflow: ellipsis;
-    flex-shrink: 0; }
-
-  section.menu .card--restaurant .card--restaurant-left {
-    width: 80%; }
-
-  section.menu .card--restaurant__title {
-    text-overflow: ellipsis; }
-
-  section.menu .card--restaurant__card-price {
-    width: 10%;
-    flex-shrink: 0;
-    margin-right: 0;
-    border-radius: 0; }
-
-  section.menu .card-restaurant-container:hover .card--restaurant-left {
-    width: 63%; }
-
-  section.menu .card-restaurant-container:hover .card--restaurant__price {
-    border-radius: 0; }
-
-  section.menu .card-restaurant-container:hover .card-hovered-area {
-    width: 10%;
-    display: flex;
-    flex-shrink: 0;
-    align-items: center;
-    justify-content: center;
-    background-color: #99E2D0;
-    border-radius: 0 20px 20px 0;
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
-    color: #fff;
-    /* FIXME */
-    margin-left: -5%; }
-
-  section.menu .card-restaurant-container:hover .card-hovered-area .card-restaurant-check-i {
-    font-size: 22px; } }
+  section.menu .card--restaurant-mrg-btm {
+    margin-bottom: 40px; }
+  section.menu .restaurants-cards-margin {
+    margin-bottom: 5px; }
+  section.menu .card-restaurant-container {
+    width: 100%; }
+    section.menu .card-restaurant-container:hover .card-hovered-area {
+      width: 10%;
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: center;
+      background-color: #99E2D0;
+      border-radius: 0 20px 20px 0;
+      box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
+      color: #fff;
+      /* FIXME */
+      margin-left: -5%; }
+    section.menu .card-restaurant-container:hover .card--restaurant__price {
+      border-radius: 0; }
+    section.menu .card-restaurant-container:hover .card-hovered-area .card-restaurant-check-i {
+      font-size: 22px; }
+    section.menu .card-restaurant-container .card--restaurant {
+      text-overflow: ellipsis; }
+    section.menu .card-restaurant-container .card--restaurant-left {
+      width: 90%; }
+    section.menu .card-restaurant-container .card--restaurant__card-price {
+      width: 10%;
+      flex-shrink: 0;
+      margin-right: 0; }
+    section.menu .card-restaurant-container .card--restaurant__title {
+      margin: 0 0 5px;
+      font-family: "Roboto";
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+    section.menu .card-restaurant-container .card--restaurant__description {
+      margin: 0px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-family: "Roboto"; }
+    section.menu .card-restaurant-container .card--restaurant__price {
+      width: 10%;
+      text-align: right;
+      border-radius: 0 20px 20px 0;
+      box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1); }
+    section.menu .card-restaurant-container .card--restaurant__price:hover {
+      border-radius: 0; }
+    section.menu .card-restaurant-container .card--restaurant__price__text {
+      margin: 0;
+      padding-top: 25px;
+      font-family: "Roboto";
+      font-weight: 600; }
 
 /*# sourceMappingURL=restaurants_menus.css.map */
