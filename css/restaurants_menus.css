@@ -17,50 +17,6 @@ section.menu {
     padding-bottom: 30px;
     background-color: #F1F1F1;
     border-radius: 25px;
-<<<<<<< HEAD
-    box-shadow: 5px -5px 15px -5px rgba(0,0,0,0.2);
-    position: relative;
-  }
-
-  /* """ Menu """ card title container */
-  section.menu .menu-card__title-container {
-    display: flex;
-    padding-top: 20px;
-  }
-  /* """ Menu """ card title */
-  section.menu .menu-card__title
-  {
-    padding-left: 20px;
-    font-family: "Shrikhand";
-    font-size: 30px;
-    flex: 1;
-  }
-  /* """ Menu """ card heart icon */
-  section.menu .menu-card__heart-icon
-  {
-    margin-right: 40px;
-    align-self: center;
-    font-size: 30px;
-  }
-  /*
-   *
-   * Uniq card element that represents a restaurant menu item
-   *
-  */
-  /* """ Menu """ card restaurant container */
-  .card-restaurant-container { width: 90%; }
-  /* """ Menu """ card variation */
-  .card--restaurant { text-overflow: ellipsis; }
-  /* """ Menu """ card category */
-  section.menu .category
-  {
-    font-family: 'Roboto';
-    text-transform: uppercase;
-  }
-  .restaurants-cards-margin { margin-bottom: 5px; }
-  section.menu .category__line
-  {
-=======
     box-shadow: 5px -5px 15px -5px rgba(0, 0, 0, 0.2); }
     section.menu .menu-container .menu-card__title-container {
       display: flex;
@@ -78,7 +34,6 @@ section.menu {
     font-family: "Roboto";
     text-transform: uppercase; }
   section.menu .category__line {
->>>>>>> sass
     width: 40px;
     height: 3px;
     margin: 10px 0 -10px;
