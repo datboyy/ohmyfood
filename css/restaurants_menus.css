@@ -73,47 +73,62 @@
     padding: 15px; }
 
   .card--restaurant-mrg-btm {
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    /* """ Menu """ card titles */ }
 
-  /* """ Menu """ card titles */ }
-section.menu .card--restaurant__title {
+  section.menu .card--restaurant__title {
+    margin: 0 0 5px;
+    font-family: "Roboto";
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+
   /* """ Menu """ card description */
-  /* """ Menu """ collapsed card collapsed price container */
-  /* """ Menu """ collapsed card collapsed price item */
-  /* Restaurant card """ menu """ item animation
-   */ }
-  section.menu .card--restaurant__title section.menu .card--restaurant__description {
+  section.menu .card--restaurant__description {
     margin: 0px;
     white-space: nowrap;
     text-overflow: ellipsis;
     font-family: "Roboto"; }
-  section.menu .card--restaurant__title section.menu .card--restaurant__price {
+
+  /* """ Menu """ collapsed card collapsed price container */
+  section.menu .card--restaurant__price {
     width: 10%;
     text-align: right;
     border-radius: 0 20px 20px 0;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1); }
-  section.menu .card--restaurant__title section.menu .card--restaurant__price__text {
+
+  /* """ Menu """ collapsed card collapsed price item */
+  section.menu .card--restaurant__price__text {
     margin: 0;
     padding-top: 25px;
     font-family: "Roboto";
     font-weight: 600; }
-  section.menu .card--restaurant__title section.menu .card--restaurant-left {
+
+  /* Restaurant card """ menu """ item animation
+   */
+  section.menu .card--restaurant-left {
     text-overflow: ellipsis;
     flex-shrink: 0; }
-  section.menu .card--restaurant__title section.menu .card--restaurant .card--restaurant-left {
+
+  section.menu .card--restaurant .card--restaurant-left {
     width: 80%; }
-  section.menu .card--restaurant__title section.menu .card--restaurant__title {
+
+  section.menu .card--restaurant__title {
     text-overflow: ellipsis; }
-  section.menu .card--restaurant__title section.menu .card--restaurant__card-price {
+
+  section.menu .card--restaurant__card-price {
     width: 10%;
     flex-shrink: 0;
     margin-right: 0;
     border-radius: 0; }
-  section.menu .card--restaurant__title section.menu .card-restaurant-container:hover .card--restaurant-left {
+
+  section.menu .card-restaurant-container:hover .card--restaurant-left {
     width: 63%; }
-  section.menu .card--restaurant__title section.menu .card-restaurant-container:hover .card--restaurant__price {
+
+  section.menu .card-restaurant-container:hover .card--restaurant__price {
     border-radius: 0; }
-  section.menu .card--restaurant__title section.menu .card-restaurant-container:hover .card-hovered-area {
+
+  section.menu .card-restaurant-container:hover .card-hovered-area {
     width: 10%;
     display: flex;
     flex-shrink: 0;
@@ -125,7 +140,8 @@ section.menu .card--restaurant__title {
     color: #fff;
     /* FIXME */
     margin-left: -5%; }
-  section.menu .card--restaurant__title section.menu .card-restaurant-container:hover .card-hovered-area .card-restaurant-check-i {
-    font-size: 22px; }
+
+  section.menu .card-restaurant-container:hover .card-hovered-area .card-restaurant-check-i {
+    font-size: 22px; } }
 
 /*# sourceMappingURL=restaurants_menus.css.map */
