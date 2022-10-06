@@ -40,9 +40,11 @@
   {
     font-family: 'Roboto';
     font-weight: 700;
-    color: #555;
+    color: #222;
   }
+
   section.head .menu-card-heart-icon-i {}
+
   .head-subtitle--p
   {
     margin-top: 0;
