@@ -1,7 +1,7 @@
 @media (max-width: 768px)
 {
   /* """ Features """ section item */
-  section.features .item
+  .features .item
   {
     width: 85%;
     margin: auto;
@@ -11,12 +11,12 @@
     border-radius: 25px;
     font-family: 'Roboto';
   }
-  section.features .item:not(:last-of-type)
+  .features .item:not(:last-of-type)
   {
     margin-bottom: 25px;
   }
   /* """ Features """ item circle */
-  section.features .item p.circle
+  .features .item__circle
   {
     width: 35px;
     height: 25px;
@@ -31,9 +31,9 @@
     text-align: center;
   }
   /* """ Features """ card title */
-  section.features .item p:not(.circle)
+  .item__description
   {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
   }
   /* """ Features """ card title icon */
