@@ -1,4 +1,5 @@
 #!/bin/bash
-sass restaurants_menus.sass ../css/restaurants_menus.css
-sass main.sass ../css/main.css
-sass features.sass ../css/features.css
+sass --style compressed header.sass ../css/header.css
+sass --style compressed restaurants_menus.sass ../css/restaurants_menus.css
+sass --style compressed main.sass ../css/main.css
+sass --style compressed features.sass ../css/features.css
