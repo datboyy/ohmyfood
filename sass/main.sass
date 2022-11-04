@@ -40,6 +40,9 @@
   .mrg-left-none
     margin-left: 0
 
+  p
+    font-family: $content_font
+
   .medium
     font-weight: 700
 
@@ -82,7 +85,7 @@
   .action-button-container
     margin-bottom: 40px
     text-align: center
-    .action-button-container-a
+    &-a
       width: 250px
       margin: auto
       display: block
@@ -91,9 +94,12 @@
       background: rgb(147,86,220)
       background: linear-gradient(0deg, rgba(147,86,220,1) 24%, rgba(255,121,218,1) 100%)
       box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25)
-      transition-duration: .25s
       border-radius: 40px
       font-family: 'Roboto'
       font-weight: 700
       color: #FFF
       cursor: pointer
+    &-a:hover
+      cursor: pointer
+      background: linear-gradient(0deg, rgba(147,86,220,1) 24%, rgba(255,121,218,1) 100%)
+      box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.35)

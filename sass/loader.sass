@@ -3,6 +3,8 @@
       opacity: 0.5
     100%
       opacity: 0
+      position: absolute
+      top: -100%
 
 @keyframes hideLoaderIcon
     to
@@ -23,7 +25,7 @@
   background-color: #fff
   opacity: 1
   opacity: 1
-  animation: hideLoaderAnimation 1s forwards
+  animation: hideLoaderAnimation 2s forwards
   animation-delay: 1.5s
   z-index: 1
 
@@ -31,7 +33,7 @@
   width: 50px
   display: block
   margin: auto
-  animation: hideLoaderAnimation 1.5s forwards
+  animation: hideLoaderAnimation 2s forwards
 
 header, main, footer
   position: absolute
