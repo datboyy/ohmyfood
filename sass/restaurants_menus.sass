@@ -11,13 +11,13 @@
   to
     width: 15%
 
-@keyframes spinner
+@keyframes selected
   from
     transform: rotate(0deg)
   to
     transform: rotate(360deg)
 
-@keyframes spinnerend
+@keyframes selectedend
   from
     transform: rotate(360deg)
   to
@@ -112,4 +112,4 @@
         display: flex
         animation: grow 0.3s forwards
       &:hover .menu-item__icon i
-        animation: spinner 0.5s forwards, spinnerend 0.5s forwards
+        animation: selected 0.5s forwards, selectedend 0.5s forwards
