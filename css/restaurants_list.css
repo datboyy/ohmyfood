@@ -1,2 +1,95 @@
-@media (max-width: 768px){section.restaurants{background-color:#F6F6F6;padding-top:30px;font-family:"Roboto"}section.restaurants .restaurant .card{width:95%;margin:0 auto 20px auto}section.restaurants .restaurant .card .new{position:absolute;margin-top:20px;padding:5px 8px 5px 8px;right:60px;background-color:#99E2D0;font-family:"Roboto";font-weight:500;color:#2DA285}section.restaurants .restaurant .card .flex{display:flex}section.restaurants .restaurant .card .flex div:first-of-type{flex:1}section.restaurants .restaurant .card .flex div:last-of-type{margin:25px 25px 0 0;font-size:20px}section.restaurants .restaurant .card img{width:100%;height:200px;object-fit:cover;border-radius:25px 25px 0 0}section.restaurants .restaurant .card h3{font-family:"Roboto";font-size:18px;margin-bottom:0px;font-weight:700;margin-left:15px}section.restaurants .restaurant .card p{margin-left:15px;margin-top:5px;padding-bottom:0px;font-family:"Roboto";font-size:15px;color:#555}}
+/* *
+ * * Homepage restaurant list
+ * *
+ * */
+section.restaurants {
+  background-color: #F6F6F6;
+  padding-top: 30px;
+  font-family: "Roboto";
+}
+section.restaurants .card {
+  /* """ Restaurants """ cards  images integration */
+  /** """ Restaurants cards content is a flex line */
+  /** """ Restaurants """ restaurant card title */
+}
+section.restaurants .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 25px 25px 0 0;
+}
+section.restaurants .card .flex {
+  display: flex;
+}
+section.restaurants .card .flex div:first-of-type {
+  flex: 1;
+}
+section.restaurants .card .flex div:last-of-type {
+  margin: 25px 25px 0 0;
+  font-size: 20px;
+}
+section.restaurants .card h3 {
+  font-family: "Roboto";
+  font-size: 18px;
+  margin-bottom: 0px;
+  font-weight: 700;
+  margin-left: 15px;
+}
+section.restaurants .card p {
+  margin-left: 15px;
+  margin-top: 5px;
+  padding-bottom: 0px;
+  font-family: "Roboto";
+  font-size: 15px;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  section.restaurants {
+    /* """ Restaurants """ card element */
+  }
+  section.restaurants .restaurant .card {
+    width: 95%;
+    margin: 0 auto 20px auto;
+    /** """ Restaurants """ card """ new """ mention */
+  }
+  section.restaurants .restaurant .card .new {
+    position: absolute;
+    margin-top: 20px;
+    padding: 5px 8px 5px 8px;
+    right: 60px;
+    background-color: #99E2D0;
+    font-family: "Roboto";
+    font-weight: 500;
+    color: #2DA285;
+  }
+}
+@media (min-width: 992px) {
+  section.restaurants {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section.restaurants h2 {
+    width: 100%;
+  }
+  section.restaurants .restaurant {
+    width: 47%;
+    margin-left: 25px;
+  }
+  section.restaurants .restaurant .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  section.restaurants .restaurant .card .new {
+    position: absolute;
+    margin: 20px -20px 0 20px;
+    padding: 5px 8px 5px 8px;
+    background-color: #99E2D0;
+    font-family: "Roboto";
+    font-weight: 500;
+    color: #2DA285;
+  }
+}
+
 /*# sourceMappingURL=restaurants_list.css.map */

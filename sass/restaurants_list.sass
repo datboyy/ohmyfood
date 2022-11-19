@@ -9,6 +9,36 @@ section.restaurants
   background-color: #F6F6F6
   padding-top: 30px
   font-family: $content_font
+  .card
+    /* """ Restaurants """ cards  images integration */
+    img
+      width: 100%
+      height: 200px
+      object-fit: cover
+      border-radius: 25px 25px 0 0
+    .flex
+      display: flex
+    /** """ Restaurants cards content is a flex line */
+    .flex div:first-of-type
+      flex: 1
+    .flex div:last-of-type
+      margin: 25px 25px 0 0
+      font-size: 20px
+    /** """ Restaurants """ restaurant card title */
+    h3
+      font-family: $content_font
+      font-size: 18px
+      margin-bottom: 0px
+      font-weight: 700
+      margin-left: 15px
+    p
+      margin-left: 15px
+      margin-top: 5px
+      padding-bottom: 0px
+      font-family: $content_font
+      font-size: 15px
+      color: #555
+
 
 @media (max-width: 768px)
   section.restaurants
@@ -26,38 +56,25 @@ section.restaurants
         font-family: $content_font
         font-weight: 500
         color: #2DA285
-      .flex
-        display: flex
-      /** """ Restaurants cards content is a flex line */
-      .flex div:first-of-type
-        flex: 1
-      .flex div:last-of-type
-        margin: 25px 25px 0 0
-        font-size: 20px
-      /* """ Restaurants """ cards  images integration */
-      img
-        width: 100%
-        height: 200px
-        object-fit: cover
-        border-radius: 25px 25px 0 0
-      /** """ Restaurants """ restaurant card title */
-      h3
-        font-family: $content_font
-        font-size: 18px
-        margin-bottom: 0px
-        font-weight: 700
-        margin-left: 15px
-      p
-        margin-left: 15px
-        margin-top: 5px
-        padding-bottom: 0px
-        font-family: $content_font
-        font-size: 15px
-        color: #555
 
 @media(min-width: 992px)
   section.restaurants
-    /* """ Restaurants """ card element */
-    .restaurant .card
-      width: 30%
-      margin: 0 auto 20px auto
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    h2
+      width: 100%
+    .restaurant
+      width: 47%
+      margin-left: 25px
+      .card
+        width: 100%
+        margin-bottom: 30px
+        .new
+          position: absolute
+          margin: 20px -20px 0 20px
+          padding: 5px 8px 5px 8px
+          background-color: #99E2D0
+          font-family: $content_font
+          font-weight: 500
+          color: #2DA285
