@@ -4,12 +4,14 @@
  *
  */
 @import '__overall.scss'
+
+section.restaurants
+  background-color: #F6F6F6
+  padding-top: 30px
+  font-family: $content_font
+
 @media (max-width: 768px)
   section.restaurants
-    background-color: #F6F6F6
-    padding-top: 30px
-    font-family: $content_font
-
     /* """ Restaurants """ card element */
     .restaurant .card
       width: 95%
@@ -52,3 +54,10 @@
         font-family: $content_font
         font-size: 15px
         color: #555
+
+@media(min-width: 992px)
+  section.restaurants
+    /* """ Restaurants """ card element */
+    .restaurant .card
+      width: 30%
+      margin: 0 auto 20px auto
