@@ -26,6 +26,16 @@
     transform: rotate(0deg);
   }
 }
+@keyframes slideup {
+  from {
+    opacity: 0;
+    transform: translatey(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translatey(0px);
+  }
+}
 section.menu {
   width: 100%;
 }
@@ -81,6 +91,17 @@ section.menu .menu-item {
   margin: 30px 20px 30px 20px;
   padding: 5px;
   font-family: "Roboto";
+  animation: slideup 0.25s forwards;
+  opacity: 0;
+}
+section.menu .menu-item:nth-of-type(1) {
+  animation-delay: 0.25s;
+}
+section.menu .menu-item:nth-of-type(2) {
+  animation-delay: 0.5s;
+}
+section.menu .menu-item:nth-of-type(3) {
+  animation-delay: 0.75s;
 }
 section.menu .menu-item__title {
   display: flex;
