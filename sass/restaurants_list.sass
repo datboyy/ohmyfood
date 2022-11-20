@@ -9,7 +9,10 @@ section.restaurants
   background-color: #F6F6F6
   padding-top: 30px
   font-family: $content_font
+  h2
+    margin-left: 20px
   .card
+    margin-bottom: 25px
     /* """ Restaurants """ cards  images integration */
     img
       width: 100%
@@ -18,19 +21,29 @@ section.restaurants
       border-radius: 25px 25px 0 0
     .flex
       display: flex
-    /** """ Restaurants cards content is a flex line */
+    /* """ Restaurants cards content is a flex line */
     .flex div:first-of-type
       flex: 1
     .flex div:last-of-type
       margin: 25px 25px 0 0
       font-size: 20px
-    /** """ Restaurants """ restaurant card title */
+      /* """ Nouveau """ label */
+    .new
+      position: absolute
+      margin-top: 20px
+      padding: 5px 8px 5px 8px
+      background-color: #99E2D0
+      font-family: $content_font
+      font-weight: 500
+      color: #2DA285
+    /* Card title */
     h3
       font-family: $content_font
       font-size: 18px
       margin-bottom: 0px
       font-weight: 700
       margin-left: 15px
+    /* Card paragraphs */
     p
       margin-left: 15px
       margin-top: 5px
@@ -40,41 +53,92 @@ section.restaurants
       color: #555
 
 
+/* Targets extra small screens */
 @media (max-width: 768px)
+  .restaurant
+    width: 95%
+    margin: auto
+    .card
+      width: 100%
+      margin: 0 auto 20px auto
+      .new
+        right: 30px
+        margin: 20px 15px 15px 20px
+        padding: 5px 8px 5px 8px
+
+/* Targets small screens */
+@media (min-width: 768px) and (max-width: 992px)
   section.restaurants
     /* """ Restaurants """ card element */
-    .restaurant .card
-      width: 95%
-      margin: 0 auto 20px auto
-      /** """ Restaurants """ card """ new """ mention */
-      .new
-        position: absolute
-        margin-top: 20px
-        padding: 5px 8px 5px 8px
-        right: 60px
-        background-color: #99E2D0
-        font-family: $content_font
-        font-weight: 500
-        color: #2DA285
+    .restaurant
+      width: 98.5
+      margin: auto
+      .card
+        width: 95%
+        margin: 0 auto 20px auto
+        .new
+          margin: 20px 30px 15px 20px
+          padding: 5px 8px 5px 8px
 
-@media(min-width: 992px)
+/* Targets tablets */
+@media(min-width: 992px) and (max-width: 1200px)
   section.restaurants
     width: 100%
-    display: flex
-    flex-wrap: wrap
-    h2
-      width: 100%
-    .restaurant
-      width: 47%
-      margin-left: 25px
+    .restaurants-container
+      display: flex
+      flex-wrap: wrap
+      padding-left: 15px
+      h2
+        width: 100%
+      .restaurant
+        width: 48.5%
+        &-mrg
+          margin-right: 15px
       .card
         width: 100%
         margin-bottom: 30px
+        img
+          height: 300px
         .new
-          position: absolute
-          margin: 20px -20px 0 20px
+          margin: 20px -20px 15px 20px
           padding: 5px 8px 5px 8px
-          background-color: #99E2D0
-          font-family: $content_font
-          font-weight: 500
-          color: #2DA285
+
+/* Targets large screens */
+@media(min-width: 1200px) and (max-width: 1400px)
+  section.restaurants
+    .restaurants-container
+      display: flex
+      flex-wrap: wrap
+      padding-left: 15px
+      width: 100%
+      .restaurant
+        width: 48.5%
+        &-mrg
+          margin-right: 10px
+      h2
+        width: 100%
+      .card img
+        height: 300px
+    .new
+      margin-left: 15px
+
+/* Targets extra-large screens */
+@media(min-width: 1400px)
+  section.restaurants
+    .restaurants-container
+      display: flex
+      flex-wrap: nowrap
+      width: 98%
+      .restaurant
+        width: 30%
+        margin-right: 15px
+      &:first-of-type
+        margin-left: 25px
+      &-mrg
+        margin-right: 0px
+      h2
+        width: 100%
+      .card img
+        height: 300px
+    .new
+      margin-left: 15px

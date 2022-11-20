@@ -23,93 +23,109 @@
   to
     transform: rotate(0deg)
 
-@media (max-width: 768px)
-  section.menu
+section.menu
+  width: 100%
+
+  .menu-card__img
     width: 100%
+    height: 300px
+    object-fit: cover
 
-    .menu-card__img
-      width: 100%
-      height: 300px
-      object-fit: cover
+  .menu-container
+    width: 100%
+    position: relative
+    z-index: 1
+    padding-bottom: 30px
+    background-color: #F1F1F1
+    border-radius: 25px
+    box-shadow: 5px -5px 15px -5px rgba(0,0,0,0.2)
 
-    .menu-container
-      width: 100%
-      position: relative
-      z-index: 1
-      margin-top: -25px
-      padding-bottom: 30px
-      background-color: #F1F1F1
-      border-radius: 25px
-      box-shadow: 5px -5px 15px -5px rgba(0,0,0,0.2)
+    .menu-card
+      &__title-container
+        display: flex
+        padding-top: 20px
 
-      .menu-card
-        &__title-container
-          display: flex
-          padding-top: 20px
-
-        &__title
-          padding-left: 20px
-          font-family: $project_font
-          font-size: 30px
-          flex: 1
-        &__heart-icon
-          margin-right: 40px
-          align-self: center
-          font-size: 30px
-
-    .category
-      font-family: $content_font
-      text-transform: uppercase
-    .category__line
-      width: 40px
-      height: 3px
-      margin: 10px 0 -10px
-      background-color: #92E2D0
-
-    .card--restaurant-pdg
-      padding: 15px
-    .card--restaurant-mrg-btm
-      margin-bottom: 40px
-    .restaurants-cards-margin
-      margin-bottom: 5px
-
-    .menu-item
-      margin: 30px 20px 30px 20px
-      padding: 5px
-      font-family: 'Roboto'
-          width: 10px
       &__title
-        display: flex
-        flex-direction: column
-        width: 80%
-        padding: 10px
-      &__subtitle
-        margin-top: 10px
-      &__price
-        width: 20%
-        display: flex
-        flex-direction: column
-        justify-content: flex-end
-        text-align: right
-        padding-right: 10px
-        padding-bottom: 10px
-      &__icon
-        width: 0%
-        display: none
-        flex-direction: column
-        justify-content: center
-        background-color: #99E2D0
-        text-align: center
-        margin: -5px
-        border-radius: 0 20px 20px 0
-        i
-          color: #fff
-          font-size: 25px
+        padding-left: 20px
+        font-family: $project_font
+        font-size: 30px
+        flex: 1
+      &__heart-icon
+        margin-right: 40px
+        align-self: center
+        font-size: 30px
 
-      &:hover .menu-item__price
-        padding-right: 20px
-      &:hover .menu-item__icon
-        display: flex
-        animation: grow 0.3s forwards
-      &:hover .menu-item__icon i
-        animation: selected 0.5s forwards, selectedend 0.5s forwards
+  .category
+    font-family: $content_font
+    text-transform: uppercase
+  .category__line
+    width: 40px
+    height: 3px
+    margin: 10px 0 -10px
+    background-color: #92E2D0
+
+  .card--restaurant-pdg
+    padding: 15px
+  .card--restaurant-mrg-btm
+    margin-bottom: 40px
+  .restaurants-cards-margin
+    margin-bottom: 5px
+
+  .menu-item
+    margin: 30px 20px 30px 20px
+    padding: 5px
+    font-family: $content-font
+    &__title
+      display: flex
+      flex-direction: column
+      width: calc(80%)
+      padding: 10px
+      white-space: nowrap
+    &__subtitle
+      width: calc(80%)
+      margin-top: 10px
+      white-space: nowrap
+    &__price
+      width: 20%
+      display: flex
+      flex-direction: column
+      justify-content: flex-end
+      text-align: right
+      padding-right: 10px
+      padding-bottom: 10px
+    &__icon
+      width: 0%
+      display: none
+      flex-direction: column
+      justify-content: center
+      background-color: #99E2D0
+      text-align: center
+      margin: -5px
+      border-radius: 0 20px 20px 0
+      i
+        color: #fff
+        font-size: 25px
+
+    &:hover .menu-item__title
+      white-space: nowrap
+      text-overflow: ellipsis
+      overflow: hidden
+    &:hover .menu-item__subtitle
+      white-space: nowrap
+      text-overflow: ellipsis
+      overflow: hidden
+    &:hover .menu-item__price
+      padding-right: 20px
+    &:hover .menu-item__icon
+      display: flex
+      animation: grow 0.3s forwards
+    &:hover .menu-item__icon i
+      animation: selected 0.5s forwards, selectedend 0.5s forwards
+
+
+@media (min-width: 1200px)
+  .container-d-flex
+    display: flex
+    .menu-category
+      width: 33%
+      padding-top: 20px

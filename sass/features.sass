@@ -1,12 +1,9 @@
 /** """ Features """ section */
-
 @import '__overall.scss'
 
 /** These rules are shared by mobile, tablets & desktop */
 .features .item
-  width: 25%
-  margin-bottom: 0
-  margin: auto
+  margin-bottom: 20px
   padding: 25px 30px 25px 50px
   background-color: $bg_light
   box-shadow: 5px 11px 15px 5px rgba(0,0,0,0.09)
@@ -38,24 +35,52 @@
     font-weight: 600
     margin-right: 20px
 
-/* Targets mobiles */
-@media(max-width: 768px)
-  .features
-    .item
-      width: 80%
-    .item:not(:last-of-type)
-      margin-bottom: 25px
 
-/* Targets tables */
-@media(min-width: 992px)
-  .features
-    display: flex
-    flex-wrap: wrap
+/* Targets small screens */
+@media(min-width: 768px) and (max-width: 992px)
+  .features .item
+    margin-left: 20px
     .item
       width: 85%
-      margin-bottom: 30px
-      text-align: center
-    .item__description
-      margin-left: -25px
+
+/* Targets tablets */
+@media(min-width: 992px) and (max-width: 1200px)
+  .features
+     h2
+       width: 100%
+     .features-container
+        width: 100%
+        margin: auto
+        display: flex
+        flex-wrap: wrap
+        .item
+          width: 100%
+          margin-bottom: 30px
+          text-align: center
+
+/* Targets large screens */
+@media(min-width: 1200px) and (max-width: 1400px)
+  .features
     h2
       width: 100%
+    .features-container
+      display: flex
+      width: 100%
+      margin-left: 25px
+    .item
+      width: 33%
+      margin-right: 40px
+
+/* Targets extra-large screens */
+@media(min-width: 1400px)
+  .features
+    h2
+      width: 100%
+    .features-container
+      display: flex
+      width: 100%
+      margin-left: 25px
+    .item
+      width: 25%
+      &:not(:last-of-type)
+        margin-right: 40px
