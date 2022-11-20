@@ -1,9 +1,7 @@
 /** """ Features """ section */
 /** These rules are shared by mobile, tablets & desktop */
 .features .item {
-  width: 25%;
-  margin-bottom: 0;
-  margin: auto;
+  margin-bottom: 20px;
   padding: 25px 30px 25px 50px;
   background-color: #F6F6F6;
   box-shadow: 5px 11px 15px 5px rgba(0, 0, 0, 0.09);
@@ -40,30 +38,59 @@
 }
 
 /* Targets mobiles */
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .features .item {
-    width: 80%;
+    margin-left: 20px;
   }
-  .features .item:not(:last-of-type) {
-    margin-bottom: 25px;
+  .features .item .item {
+    width: 85%;
   }
 }
-/* Targets tables */
-@media (min-width: 992px) {
-  .features {
+/* Targets tablets */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .features h2 {
+    width: 100%;
+  }
+  .features .features-container {
+    width: 100%;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
   }
-  .features .item {
-    width: 85%;
+  .features .features-container .item {
+    width: 100%;
     margin-bottom: 30px;
     text-align: center;
   }
-  .features .item__description {
-    margin-left: -25px;
-  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
   .features h2 {
     width: 100%;
+  }
+  .features .features-container {
+    display: flex;
+    width: 100%;
+    margin-left: 25px;
+  }
+  .features .item {
+    width: 33%;
+    margin-right: 40px;
+  }
+}
+@media (min-width: 1400px) {
+  .features h2 {
+    width: 100%;
+  }
+  .features .features-container {
+    display: flex;
+    width: 100%;
+    margin-left: 25px;
+  }
+  .features .item {
+    width: 25%;
+  }
+  .features .item:not(:last-of-type) {
+    margin-right: 40px;
   }
 }
 
