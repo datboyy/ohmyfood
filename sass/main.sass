@@ -5,6 +5,12 @@ body
   .mrg-top-none
     margin-top: 0
 
+  @media (min-width: 1400px)
+    /* This container is used on large screen to make pages condensed */
+    .mrg-auto-container
+      width: 80%
+      margin: auto
+
   .d-flex
     display: flex
 
@@ -24,7 +30,6 @@ body
   .bg-light-alt
     background-color: $background_grey_alt_2
 
-
   /** Pages sections titles */
   .overall-section-titles
     margin-left: 0
@@ -42,16 +47,11 @@ body
     margin-bottom: 0
     font-family: $content_font
 
-  @media (min-width: 1400px)
-    .mrg-auto-container
-      width: 80%
-      margin: auto
-
-  /* """ Actions buttons */
+  /* """ CTA buttons */
   .action-button-container
     margin-bottom: 40px
     text-align: center
-    &-a
+    a
       width: 250px
       margin: auto
       display: block
@@ -61,11 +61,12 @@ body
       background: linear-gradient(0deg, rgba(147,86,220,1) 24%, rgba(255,121,218,1) 100%)
       box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25)
       border-radius: 40px
+      text-decoration: none 
       font-family: $content_font
       font-weight: 700
       color: #FFF
       cursor: pointer
-    &-a:hover
+    a:hover
       cursor: pointer
       background: linear-gradient(0deg, rgba(147,86,220,1) 24%, rgba(255,121,218,1) 80%)
       box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.35)
