@@ -93,7 +93,8 @@
     margin: 25px auto auto auto;
   }
   .features .item {
-    display: flex;
+    width: 25%;
+    text-align: center;
   }
   .features .item:not(:last-of-type) {
     margin-right: 60px;
