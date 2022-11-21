@@ -5,35 +5,41 @@
 /* General rules targeting mobile first */
 section.restaurants {
   background-color: #F6F6F6;
-  padding-top: 30px;
+  padding: 30px 0 40px 0;
   font-family: "Roboto";
 }
-section.restaurants .card {
-  width: 100%;
-  margin-bottom: 25px;
+section.restaurants h2 {
+  padding: 0 0 0 30px;
+}
+section.restaurants .restaurant {
+  padding: 0 30px 0 30px;
   /* """ Restaurants """ cards  images integration */
   /* """ Restaurants cards content is a flex line */
   /* Card title */
   /* Card paragraphs */
 }
-section.restaurants .card img {
+section.restaurants .restaurant .card {
+  width: 100%;
+  margin-bottom: 20px;
+}
+section.restaurants .restaurant img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   border-radius: 25px 25px 0 0;
 }
-section.restaurants .card .flex {
+section.restaurants .restaurant .flex {
   display: flex;
 }
-section.restaurants .card .flex div:first-of-type {
+section.restaurants .restaurant .flex div:first-of-type {
   flex: 1;
 }
-section.restaurants .card .flex div:last-of-type {
+section.restaurants .restaurant .flex div:last-of-type {
   margin: 25px 25px 0 0;
   font-size: 20px;
   /* """ Nouveau """ label */
 }
-section.restaurants .card .new {
+section.restaurants .restaurant .new {
   position: absolute;
   margin-top: 20px;
   padding: 5px 8px 5px 8px;
@@ -42,14 +48,14 @@ section.restaurants .card .new {
   font-weight: 500;
   color: #2DA285;
 }
-section.restaurants .card h3 {
+section.restaurants .restaurant h3 {
   font-family: "Roboto";
   font-size: 18px;
   margin-bottom: 0px;
   font-weight: 700;
   margin-left: 15px;
 }
-section.restaurants .card p {
+section.restaurants .restaurant p {
   margin-left: 15px;
   margin-top: 5px;
   padding-bottom: 0px;
@@ -60,13 +66,6 @@ section.restaurants .card p {
 
 /* Targets extra small screens */
 @media (max-width: 768px) {
-  .restaurant {
-    width: 99%;
-  }
-  .restaurant .card {
-    width: 100%;
-    margin: 0 auto 20px auto;
-  }
   .restaurant .card .new {
     right: 40px;
     margin: 20px 15px 15px 20px;
