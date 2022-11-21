@@ -45,6 +45,12 @@ body .card-title {
   margin-bottom: 0;
   font-family: "Roboto";
 }
+@media (min-width: 1400px) {
+  body .mrg-auto-container {
+    width: 80%;
+    margin: auto;
+  }
+}
 body .action-button-container {
   margin-bottom: 40px;
   text-align: center;

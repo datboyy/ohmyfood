@@ -41,10 +41,17 @@ section.head .head-location-i {
   margin-right: 25px;
 }
 section.head .head__title {
+  display: block;
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
   font-family: "Roboto";
   color: #222;
 }
 section.head .head-subtitle--p {
+  display: block;
+  width: 90%;
+  margin: auto;
   margin-top: 0;
   font-weight: 300;
   font-size: 18px;
