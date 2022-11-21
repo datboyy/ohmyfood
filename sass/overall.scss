@@ -1,15 +1,19 @@
-$overall_margin: 10px 20px 20px 20px;
+/* A collection of variables for maintainability */
 
+/* Related to fonts */
 $project_font: 'Shrikhand';
 $content_font: 'Roboto';
 
+/* Related to the different kind of grey used as background */
 $header_background: #FFF;
+$background_grey_alt_1: #EAEAEA;
+$background_grey_alt_2: #F6F6F6;
 
-$bg_light: #F6F6F6;
-
+/* Related to colors & background used by the index page " features " section */
 $feat_icon_color: #7E7E7E;
 $feat_circle_bg: #9356DC;
 $feat_hover_bg: #F5EDFF;
 $feat_hover_icon_color: #9356DC;
+
 
 $cards_shadow: 5px 11px 15px 5px rgba(0,0,0,0.09);
