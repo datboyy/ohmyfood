@@ -29,4 +29,4 @@ les 4 menus dans l’après-midi. À toi de jouer, maintenant !</p>
 <p>Vous décidez alors, avec l’équipe, que le site contiendra 4 menus dans un premier temps. Voici le <a href="https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P3+CSS+animations/DW+P3+-+Brief+creatif+-+Ohmyfood!.pdf">brief</a> que vous établissez avec le CTO, Paul.</p>
 <p>De retour à votre bureau, vous trouvez un mail de Fanny qui vous envoie <a href="https://course.oc-static.com/projects/DW_P3/Maquette+Ohmyfood.zip">les maquettes</a> du site.</p>
 <p><img src="Dynamisez%20une%20page%20web%20avec%20des%20animations%20CSS%20-%20OpenClassrooms_fichiers/15982605908418_Maquettes%20Ohmyfood.jpg" alt=""></p>
-<p>Vous avez désormais tous les éléments pour construire ce site mobile. Vous vous lancez dans cette nouvelle aventure !</p>
+<p>Vous avez désormais tous les éléments pour construire ce site mobile. Vous vous lancez dans cette nouvelle aventure!</p>
