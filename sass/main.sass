@@ -1,12 +1,11 @@
-@import '__overall.scss'
+@import 'overall.scss'
 
 body
   overflow-x: hidden
-
-  .overall-padding
-    padding: $overall_padding
   .overall-restaurant-pres-margin
     margin: $overall_margin
+  .overall-padding
+    padding: $overall_xs_padding
 
   .mrg-top-none
     margin-top: 0
@@ -20,7 +19,6 @@ body
 
   .text-medium
     font-weight: 700
-
   a.link-black
     color: black
   a.no-decoration
@@ -32,11 +30,10 @@ body
   .bg-light-alt
     background-color: #F6F6F6
 
-   .opacity-0
-     opacity: 0
 
   /** Pages sections titles */
   .overall-section-titles
+    margin-left: 0
     font-family: $content_font
     font-weight: 700
     font-size: 25px
@@ -65,7 +62,7 @@ body
       background: linear-gradient(0deg, rgba(147,86,220,1) 24%, rgba(255,121,218,1) 100%)
       box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25)
       border-radius: 40px
-      font-family: 'Roboto'
+      font-family: $content_font
       font-weight: 700
       color: #FFF
       cursor: pointer
@@ -75,54 +72,7 @@ body
       box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.35)
 
 
-  /* Heart icons buttons */
-  @keyframes heartAnimation
-    0%
-      background: linear-gradient(0deg, rgba(147,86,220,1) 24%, rgba(255,121,218,1) 0%)
-      -webkit-background-clip: text
-      -webkit-text-fill-color: transparent
-    10%
-      background: linear-gradient(0deg, rgba(147,86,220,1) 24%, rgba(255,121,218,1) 10%)
-      -webkit-background-clip: text
-      -webkit-text-fill-color: transparent
-    20%
-      background: linear-gradient(0deg, rgba(147,86,220,1) 24%, rgba(255,121,218,1) 20%)
-      -webkit-background-clip: text
-      -webkit-text-fill-color: transparent
-    30%
-      background: linear-gradient(0deg, rgba(147,86,220,1) 24%, rgba(255,121,218,1) 30%)
-      -webkit-background-clip: text
-      -webkit-text-fill-color: transparent
-    40%
-      background: linear-gradient(0deg, rgba(147,86,220,1) 24%, rgba(255,121,218,1) 40%)
-      -webkit-background-clip: text
-      -webkit-text-fill-color: transparent
-    50%
-      background: linear-gradient(0deg, rgba(147,86,220,1) 24%, rgba(255,121,218,1) 50%)
-      -webkit-background-clip: text
-      -webkit-text-fill-color: transparent
-    60%
-      background: linear-gradient(0deg, rgba(147,86,220,1) 24%, rgba(255,121,218,1) 60%)
-      -webkit-background-clip: text
-      -webkit-text-fill-color: transparent
-    70%
-      background: linear-gradient(0deg, rgba(147,86,220,1) 24%, rgba(255,121,218,1) 70%)
-      -webkit-background-clip: text
-      -webkit-text-fill-color: transparent
-    80%
-      background: linear-gradient(0deg, rgba(147,86,220,1) 24%, rgba(255,121,218,1) 80%)
-      -webkit-background-clip: text
-      -webkit-text-fill-color: transparent
-    90%
-      background: linear-gradient(0deg, rgba(147,86,220,1) 24%, rgba(255,121,218,1) 90%)
-      -webkit-background-clip: text
-      -webkit-text-fill-color: transparent
-    100%
-      background: linear-gradient(0deg, rgba(147,86,220,1) 24%, rgba(255,121,218,1) 100%)
-      -webkit-background-clip: text
-      -webkit-text-fill-color: transparent
-
-  .fa-heart:hover
-    font-weight: 700
-    cursor: pointer
-    animation: heartAnimation 0.5s forwards
+@media(min-width: 768px) and (max-width: 992px)
+  body
+    .overall-padding
+      padding: $overall-sm-padding

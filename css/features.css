@@ -14,7 +14,7 @@
   position: absolute;
   width: 35px;
   height: 25px;
-  margin: 10px -60px;
+  margin: 10px -70px;
   padding-top: 10px;
   border-radius: 35px;
   background-color: #9356DC;
@@ -37,7 +37,7 @@
   margin-right: 20px;
 }
 
-/* Targets mobiles */
+/* Targets small screens */
 @media (min-width: 768px) and (max-width: 992px) {
   .features .item {
     margin-left: 20px;
@@ -63,6 +63,7 @@
     text-align: center;
   }
 }
+/* Targets large screens */
 @media (min-width: 1200px) and (max-width: 1400px) {
   .features h2 {
     width: 100%;
@@ -77,6 +78,7 @@
     margin-right: 40px;
   }
 }
+/* Targets extra-large screens */
 @media (min-width: 1400px) {
   .features h2 {
     width: 100%;

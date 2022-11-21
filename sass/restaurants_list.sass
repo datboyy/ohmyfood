@@ -3,15 +3,14 @@
  * Homepage restaurant list
  *
  */
-@import '__overall.scss'
-
+@import 'overall.scss'
+/* General rules targeting mobile first */
 section.restaurants
   background-color: #F6F6F6
   padding-top: 30px
   font-family: $content_font
-  h2
-    margin-left: 20px
   .card
+    width: 100%
     margin-bottom: 25px
     /* """ Restaurants """ cards  images integration */
     img
@@ -56,13 +55,12 @@ section.restaurants
 /* Targets extra small screens */
 @media (max-width: 768px)
   .restaurant
-    width: 95%
-    margin: auto
+    width: 99%
     .card
       width: 100%
       margin: 0 auto 20px auto
       .new
-        right: 30px
+        right: 40px
         margin: 20px 15px 15px 20px
         padding: 5px 8px 5px 8px
 
@@ -71,11 +69,7 @@ section.restaurants
   section.restaurants
     /* """ Restaurants """ card element */
     .restaurant
-      width: 98.5
-      margin: auto
       .card
-        width: 95%
-        margin: 0 auto 20px auto
         .new
           margin: 20px 30px 15px 20px
           padding: 5px 8px 5px 8px
@@ -92,8 +86,6 @@ section.restaurants
         width: 100%
       .restaurant
         width: 48.5%
-        &-mrg
-          margin-right: 15px
       .card
         width: 100%
         margin-bottom: 30px

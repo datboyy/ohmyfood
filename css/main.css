@@ -5,13 +5,12 @@ body {
   /** Pages sections titles */
   /** Cards general rules **/
   /* """ Actions buttons */
-  /* Heart icons buttons */
-}
-body .overall-padding {
-  padding: 20px 20px 40px 20px;
 }
 body .overall-restaurant-pres-margin {
   margin: 10px 20px 20px 20px;
+}
+body .overall-padding {
+  padding: 20px 40px 50px 40px;
 }
 body .mrg-top-none {
   margin-top: 0;
@@ -38,6 +37,7 @@ body .bg-light-alt {
   background-color: #F6F6F6;
 }
 body .overall-section-titles {
+  margin-left: 0;
   font-family: "Roboto";
   font-weight: 700;
   font-size: 25px;
@@ -75,67 +75,77 @@ body .action-button-container-a:hover {
   background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 80%);
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.35);
 }
-@keyframes heartAnimation {
-  0% {
-    background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 0%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+
+@media (min-width: 768px) and (max-width: 992px) {
+  body .overall-padding {
+    padding: 20px 30px 50px 30px;
   }
-  10% {
-    background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 10%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  /* Heart icons buttons */
+  @keyframes heartAnimation {
+    0% {
+      background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 0%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    10% {
+      background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 10%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    20% {
+      background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 20%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    30% {
+      background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 30%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    40% {
+      background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 40%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    50% {
+      background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 50%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    60% {
+      background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 60%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    70% {
+      background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 70%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    80% {
+      background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 80%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    90% {
+      background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 90%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    100% {
+      background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
-  20% {
-    background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 20%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  .fa-heart {
+    font-size: 25px;
   }
-  30% {
-    background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 30%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  .fa-heart:hover {
+    font-weight: 700;
+    cursor: pointer;
+    animation: heartAnimation 0.5s forwards;
   }
-  40% {
-    background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 40%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  50% {
-    background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 50%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  60% {
-    background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 60%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  70% {
-    background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 70%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  80% {
-    background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 80%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  90% {
-    background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 90%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  100% {
-    background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-}
-body .fa-heart:hover {
-  font-weight: 700;
-  cursor: pointer;
-  animation: heartAnimation 0.5s forwards;
 }
 
 /*# sourceMappingURL=main.css.map */

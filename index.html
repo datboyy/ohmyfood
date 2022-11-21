@@ -17,188 +17,116 @@
     <!-- Project's built-in CSS files  -->
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/loader.css" />
+    <link rel="stylesheet" href="css/heart-icon.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/features.css" />
     <link rel="stylesheet" href="css/restaurants_list.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/responsive_tablets.css" />
-    <link rel="stylesheet" href="css/responsive_desktop.css" />
   </head>
   <body>
+    <!-- Loader icon  -->
+    <div class="loader"><img src="assets/loader.gif" alt="loader image"/></div>
 
-    <!--
+    <!-- Page header -->
+    <header><img class="header__img" src="assets/logo/ohmyfood.png" alt="logo ohmyfood" /></header>
 
-        Loader
-
-    -->
-    <div class="loader">
-      <img src="assets/loader.gif" alt="loader image"/>
-    </div>
-
-    <!--
-
-        Page header
-
-    -->
-    <header>
-      <img class="header__img" src="assets/logo/ohmyfood.png" alt="logo ohmyfood" />
-    </header>
+    <!-- Page content -->
     <main>
-      <!--
 
-          """ Head """ section
-
-      -->
+      <!-- """ Head """ section -->
       <section class="head bg-light-alt">
         <div class="head-location bg-light">
             <i class="head-location-i fa-solid fa-location-dot"></i>Paris, Belleville
         </div> <!-- /.head-location -->
         <div class="head-title mrg-top-none">
           <h2 class="head__title">Réservez le menu qui vous convient</h2>
-          <p class="head-subtitle-p pdg">
-            Découvrez des restaurants d'exception, séléctionnés par nos soins.
-          </p> <!-- /head-subtitle-p -->
+          <p class="head-subtitle-p pdg">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p> <!-- /head-subtitle-p -->
         </div> <!-- /.head-title -->
-        <!--
-            Explore button
-        -->
+        <!-- Explore button -->
         <p class="action-button-container">
           <a class="action-button-container-a">Explorer nos restaurants</a>
         </p> <!-- /explore-btn-container -->
       </section> <!-- /.head -->
-      <!--
 
-          """ Features """ section
-
-      -->
+      <!-- """ Features """ section -->
       <section class="features overall-padding">
         <h2 class="overall-section-titles">Fonctionnement</h2>
         <div class="features-container">
-          <!--
-               Item #1
-          -->
+          <!-- Item #1 -->
           <div class="item">
             <p class="item__circle">1</p>
-            <p class="item__description">
-              <i class="item__icon fa-solid fa-mobile-screen"></i>Choisissez un restaurant
-            </p>
+            <p class="item__description"><i class="item__icon fa-solid fa-mobile-screen"></i>Choisissez un restaurant</p>
           </div> <!-- /.item -->
-          <!--
-               Item #2
-          -->
+          <!-- Item #2 -->
           <div class="item">
             <p class="item__circle">2</p>
-            <p class="item__description">
-              <i class="item__icon fa-solid fa-list"></i>Composez votre menu
-            </p>
+            <p class="item__description"><i class="item__icon fa-solid fa-list"></i>Composez votre menu</p>
           </div> <!-- /.item -->
-          <!--
-              Item #3
-          -->
+          <!-- Item #3 -->
           <div class="item">
             <p class="item__circle">3</p>
-            <p class="item__description">
-              <i class="item__icon fa-solid fa-store"></i>Dégustez au restaurants
-            </p>
+            <p class="item__description"><i class="item__icon fa-solid fa-store"></i>Dégustez au restaurants</p>
           </div> <!-- /.item -->
         </div> <!-- /.features-container -->
       </section> <!-- /.features -->
 
-      <section class="restaurants">
+      <!-- """ Restaurants list """ section -->
+      <section class="restaurants overall-padding">
         <h2 class="overall-section-titles">Restaurants</h2>
-        <div class="restaurants-container">
-          <!--
-
-              """ Restaurants list """ section
-
-          -->
-          <!--
-              La palette du gout
-          -->
-          <article class="restaurant restaurant-mrg">
+          <!-- La palette du gout -->
+          <article class="restaurant">
             <div class="card card-restaurant">
               <div class="new">Nouveau</div>
               <img src="assets/restaurants/la_palette_du_gout.jpg" />
               <div class="flex">
                 <div>
-                  <h3>
-                      <a class="link-black no-decoration" href="restaurants/la_palette_du_gout.html">
-                        La palette du gout
-                      </a>
-                  </h3>
+                  <h3><a class="link-black no-decoration" href="restaurants/la_palette_du_gout.html">La palette du gout</a></h3>
                   <p>Ménilmontant</p>
                 </div>
-                <div>
-                  <i class="fa-regular fa-heart"></i>
-                </div>
+                <div><i class="fa-regular fa-heart"></i></div>
               </div> <!-- /.flex -->
-            </div>
+            </div> <!-- /.card-restaurant -->
           </article> <!-- /.restaurant -->
-          <!--
-              La note enchantée
-          -->
+          <!-- La note enchantée -->
           <article class="restaurant">
             <div class="card card-restaurant">
               <div class="new">Nouveau</div>
               <img src="assets/restaurants/la_note_enchantee.jpg" alt="la note enchantée" />
               <div class="flex">
                 <div>
-                  <h3>
-                    <a class="link-black no-decoration" href="restaurants/la_note_enchantee.html">
-                      La note enchantée
-                    </a>
-                  </h3>
+                  <h3><a class="link-black no-decoration" href="restaurants/la_note_enchantee.html">La note enchantée</a></h3>
                   <p>Charonne</p>
                 </div>
-                <div>
-                  <i class="fa-regular fa-heart"></i>
-                </div>
+                <div><i class="fa-regular fa-heart"></i></div>
               </div> <!-- /.flex -->
             </div> <!-- /.card -->
           </article> <!-- /.restaurant -->
-          <!--
-              A la française
-          -->
+          <!-- A la française -->
           <article class="restaurant restaurant-mrg">
             <div class="card card-restaurant">
               <img src="assets/restaurants/a_la_francaise.jpg" alt="retaurant a la française" />
               <div class="flex">
                 <div>
-                  <h3>
-                    <a class="link-black no-decoration" href="restaurants/a_la_francaise.html">
-                      A la française
-                    </a>
-                  </h3>
+                  <h3><a class="link-black no-decoration" href="restaurants/a_la_francaise.html">A la française</a></h3>
                   <p>Cité Rouge</p>
                 </div>
-                <div>
-                  <i class="fa-regular fa-heart"></i>
-                </div>
+                <div><i class="fa-regular fa-heart"></i></div>
               </div> <!-- /.flex -->
             </div>
           </article> <!-- /.restaurant -->
-          <!--
-            Le délice des sens
-          -->
+          <!-- Le délice des sens -->
           <article class="restaurant">
             <div class="card card-restaurant">
               <img src="assets/restaurants/le_delice_des_sens.jpg" alt="le delice des sens" />
               <div class="flex">
                 <div>
-                  <h3>
-                    <a class="link-black no-decoration" href="restaurants/le_delice_des_sens.html">
-                      Le délice des sens
-                    </a>
-                  </h3>
+                  <h3><a class="link-black no-decoration" href="restaurants/le_delice_des_sens.html">Le délice des sens</a></h3>
                   <p>Folie Méricourt</p>
                 </div>
-                <div>
-                  <i class="fa-regular fa-heart"></i>
-                </div>
+                <div><i class="fa-regular fa-heart"></i></div>
               </div> <!-- /.flex -->
             </div>
           </article> <!-- /.restaurant -->
-        </div> <!-- /.restaurant-container -->
       </section> <!-- /.restaurants -->
     </main>
     <!--

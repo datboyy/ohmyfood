@@ -2,15 +2,14 @@
  * * Homepage restaurant list
  * *
  * */
+/* General rules targeting mobile first */
 section.restaurants {
   background-color: #F6F6F6;
   padding-top: 30px;
   font-family: "Roboto";
 }
-section.restaurants h2 {
-  margin-left: 20px;
-}
 section.restaurants .card {
+  width: 100%;
   margin-bottom: 25px;
   /* """ Restaurants """ cards  images integration */
   /* """ Restaurants cards content is a flex line */
@@ -62,15 +61,14 @@ section.restaurants .card p {
 /* Targets extra small screens */
 @media (max-width: 768px) {
   .restaurant {
-    width: 95%;
-    margin: auto;
+    width: 99%;
   }
   .restaurant .card {
     width: 100%;
     margin: 0 auto 20px auto;
   }
   .restaurant .card .new {
-    right: 30px;
+    right: 40px;
     margin: 20px 15px 15px 20px;
     padding: 5px 8px 5px 8px;
   }
@@ -79,14 +77,6 @@ section.restaurants .card p {
 @media (min-width: 768px) and (max-width: 992px) {
   section.restaurants {
     /* """ Restaurants """ card element */
-  }
-  section.restaurants .restaurant {
-    width: 98.5;
-    margin: auto;
-  }
-  section.restaurants .restaurant .card {
-    width: 95%;
-    margin: 0 auto 20px auto;
   }
   section.restaurants .restaurant .card .new {
     margin: 20px 30px 15px 20px;
@@ -108,9 +98,6 @@ section.restaurants .card p {
   }
   section.restaurants .restaurants-container .restaurant {
     width: 48.5%;
-  }
-  section.restaurants .restaurants-container .restaurant-mrg {
-    margin-right: 15px;
   }
   section.restaurants .restaurants-container .card {
     width: 100%;

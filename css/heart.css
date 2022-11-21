@@ -1,0 +1,69 @@
+/* Heart icons buttons */
+@keyframes heartAnimation {
+  0% {
+    background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 0%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  10% {
+    background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 10%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  20% {
+    background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  30% {
+    background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 30%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  40% {
+    background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 40%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  50% {
+    background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  60% {
+    background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  70% {
+    background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  80% {
+    background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  90% {
+    background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    background: linear-gradient(0deg, rgb(147, 86, 220) 24%, rgb(255, 121, 218) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.fa-heart {
+  font-size: 25px;
+}
+
+.fa-heart:hover {
+  font-weight: 700;
+  cursor: pointer;
+  animation: heartAnimation 0.5s forwards;
+}
+
+/*# sourceMappingURL=heart.css.map */
