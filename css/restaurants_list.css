@@ -73,7 +73,7 @@ section.restaurants .restaurant p {
   }
 }
 /* Targets small screens */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 992px) {
   section.restaurants {
     /* """ Restaurants """ card element */
   }
@@ -118,8 +118,11 @@ section.restaurants .restaurant p {
     margin-right: 1.5%;
   }
 }
-/* Targets extra-large screens */
-@media (min-width: 1400px) {
+/* Targets large screens */
+@media (min-width: 1200px) {
+  header {
+    position: fixed;
+  }
   section.restaurants h2 {
     width: 100%;
     text-align: center;
