@@ -7,7 +7,15 @@
     width: 0%;
   }
   to {
-    width: 15%;
+    width: 20%;
+  }
+}
+@keyframes growReverse {
+  from {
+    width: 20%;
+  }
+  to {
+    width: 0%;
   }
 }
 @keyframes selected {
@@ -18,7 +26,7 @@
     transform: rotate(360deg);
   }
 }
-@keyframes selectedend {
+@keyframes selecteEnd {
   from {
     transform: rotate(360deg);
   }
@@ -26,14 +34,14 @@
     transform: rotate(0deg);
   }
 }
-@keyframes slideup {
+@keyframes slideUp {
   from {
-    opacity: 0;
-    transform: translatey(-30px);
+    transform: translatey(20px);
+    opacity: 0%;
   }
   to {
-    opacity: 1;
     transform: translatey(0px);
+    opacity: 100%;
   }
 }
 section.menu {
@@ -95,7 +103,7 @@ section.menu .menu-item {
   margin: 30px 20px 30px 20px;
   padding: 5px;
   font-family: "Roboto";
-  animation: slideup 0.25s forwards;
+  animation: slideUp 1s forwards;
   opacity: 0;
 }
 section.menu .menu-item:nth-of-type(1) {
@@ -128,20 +136,26 @@ section.menu .menu-item__price {
   flex-direction: column;
   justify-content: flex-end;
   text-align: right;
-  padding-right: 10px;
+  margin-right: 25px;
   padding-bottom: 10px;
 }
 section.menu .menu-item__icon {
-  width: 0%;
-  display: none;
+  animation: growReverse 0.5s forwards;
+  transition: all 0.2s ease-in-out;
+  display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   background-color: #99E2D0;
+  padding-top: 5px;
   text-align: center;
   margin: -5px;
   border-radius: 0 20px 20px 0;
+  cursor: pointer;
 }
 section.menu .menu-item__icon i {
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
   color: #fff;
   font-size: 25px;
 }
@@ -160,10 +174,11 @@ section.menu .menu-item:hover .menu-item__price {
 }
 section.menu .menu-item:hover .menu-item__icon {
   display: flex;
-  animation: grow 0.3s forwards;
+  animation: grow 0.5s forwards;
 }
 section.menu .menu-item:hover .menu-item__icon i {
-  animation: selected 0.5s forwards, selectedend 0.5s forwards;
+  visibility: visible;
+  animation: selected 1s forwards, selectedEnd 1s forwards;
 }
 
 .action-button-container {
