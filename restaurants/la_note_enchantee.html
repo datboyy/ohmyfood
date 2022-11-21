@@ -22,242 +22,153 @@
     <link rel="stylesheet" href="../css/footer.css" />
   </head>
   <body>
-    <!--
-
-        Page header
-
-    -->
+    <!-- Page header -->
     <header class="header">
-      <a href="../index.html" class="header__back-link">
-        <i class="header__back fa-solid fa-arrow-left"></i>
-      </a>
-      <img class="header__img" src="../assets/logo/ohmyfood.png" />
+      <a href="../index.html" class="header__back-link"><i class="header__back fa-solid fa-arrow-left"></i></a> <!-- ./back-link -->
+      <img class="header__img" src="../assets/logo/ohmyfood.png" alt="ohmyfood logo" /> <!-- ohmyfood logo -->
     </header>
     <main>
+      <!-- Whole menu container -->
       <section class="menu">
-        <img class="menu-card__img" src="../assets/restaurants/la_note_enchantee.jpg" alt="Image de nourriture" />
+        <img class="menu-card-img" src="../assets/restaurants/la_palette_du_gout.jpg" alt="Image de nourriture" /> <!-- menu header image -->
         <div class="mrg-auto-container">
+          <!-- head menu title -->
           <div class="menu-container">
-          <!--
+            <div class="menu-card__title-container">
+              <h2 class="menu-card__title">La note enchantée</h2>
+              <i class="menu-card__heart-icon fa-regular fa-heart"></i>
+            </div> <!-- ./.menu_conttainer__card-title -->
+            <!-- Restaurant menu category "" entrées "" -->
+            <div class="container-d-flex">
+              <div class="menu-category">
+                <div class="category overall-restaurant-pres-margin">Entrées
+                  <div class="category__line overall-restaurant-pres-margin"></div> <!-- """ entrées """ bottom line -->
+                </div> <!-- /.menu-card-category-div -->
 
-                Restaurant menu
+                <!-- Entrée #1 -->
+                <article class="menu-item card d-flex">
+                  <div class="menu-item__title">
+                    <span class="text-medium">Ravioles de foie gras</span>
+                    <div class="menu-item__subtitle">Accompagnés de leur crême à la truffe</div> <!-- /.subtitle -->
+                  </div> <!-- ./__title -->
+                  <div class="menu-item__price"><span class="text-medium">25€</span></div> <!-- /__price -->
+                  <div class="menu-item__icon"><i class="card-restaurant-check-i fa-sharp fa-solid fa-circle-check"></i></div> <!-- /.__icon -->
+                </article> <!-- /.menu-item -->
 
-          -->
-          <div class="menu-card__title-container">
-            <h2 class="menu-card__title">La note enchantée</h2>
-            <i class="menu-card__heart-icon fa-regular fa-heart"></i>
-          </div> <!-- ./.menu_conttainer__card-title -->
-          <!--
+                <!-- Entrée #2 -->
+                <article class="menu-item card d-flex">
+                  <div class="menu-item__title">
+                    <span class="text-medium">Caviar osciètre</span>
+                    <div class="menu-item__subtitle">Sur blini à la farine de blé noir</div> <!-- /.subtitle -->
+                  </div> <!-- ./__title -->
+                  <div class="menu-item__price"><span class="text-medium">35€</span></div> <!-- /__price -->
+                  <div class="menu-item__icon"><i class="card-restaurant-check-i fa-sharp fa-solid fa-circle-check"></i></div> <!-- /.__ check-icon -->
+                </article> <!-- /.menu-item -->
 
-              Restaurant menu category "" entrées ""
+                <!-- Entrée #3 -->
+                <article class="menu-item card d-flex">
+                  <div class="menu-item__title">
+                    <span class="text-medium">Homard et espuma de langoustine</span>
+                    <div class="menu-item__subtitle">Mariée aux zests d'orange</div> <!-- /.subtitle -->
+                  </div> <!-- ./__title -->
+                  <div class="menu-item__price"><span class="text-medium">20€</span></div> <!-- /__price -->
+                  <div class="menu-item__icon"> <i class="card-restaurant-check-i fa-sharp fa-solid fa-circle-check"></i></div> <!-- /.__check-icon -->
+                </article> <!-- /.menu-item -->
 
-          -->
-          <div class="container-d-flex">
-            <div class="menu-category">
-              <div class="category overall-restaurant-pres-margin">
-                Entrées
-                <div class="category__line overall-restaurant-pres-margin"></div>
-              </div> <!-- /.menu-card-category-div -->
+                <!-- Entrée #4 -->
+                <article class="menu-item card d-flex">
+                  <div class="menu-item__title">
+                    <span class="text-medium">Foie gras de canard cuit entier</span>
+                    <div class="menu-item__subtitle">Confiture de figue et pain toasté</div> <!-- /.subtitle -->
+                  </div> <!-- ./__title -->
+                  <div class="menu-item__price"><span class="text-medium">40€</span></div> <!-- /__price -->
+                  <div class="menu-item__icon"><i class="card-restaurant-check-i fa-sharp fa-solid fa-circle-check"></i></div> <!-- /.__check-icon -->
+                </article> <!-- /.menu-item -->
+              </div> <!-- /.menu-category -->
 
-              <!-- Entrée #1 -->
-              <article class="menu-item card d-flex">
-                <div class="menu-item__title">
-                  <span class="text-medium">Ravioles de foie gras</span>
-                  <div class="menu-item__subtitle">
-                    Accompagnés de leur crême à la truffe
-                  </div> <!-- /.subtitle -->
-                </div> <!-- ./__title -->
-                <div class="menu-item__price">
-                  <span class="text-medium">25€</span>
-                </div> <!-- /__price -->
-                <div class="menu-item__icon">
-                  <i class="card-restaurant-check-i fa-sharp fa-solid fa-circle-check"></i>
-                </div> <!-- /.__icon -->
-              </article> <!-- /.menu-item -->
+              <div class="menu-category">
+                <!-- Restaurant menu "" plats "" -->
+                <div class="category overall-restaurant-pres-margin"> Plats
+                  <div class="category__line overall-restaurant-pres-margin"></div>
+                </div> <!-- /.menu-card-category-div -->
 
-              <!-- Entrée #2 -->
-              <article class="menu-item card d-flex">
-                <div class="menu-item__title">
-                  <span class="text-medium">Caviar osciètre</span>
-                  <div class="menu-item__subtitle">
-                     Sur blini à la farine de blé noir
-                  </div> <!-- /.subtitle -->
-                </div> <!-- ./__title -->
-                <div class="menu-item__price">
-                  <span class="text-medium">35€</span>
-                </div> <!-- /__price -->
-                <div class="menu-item__icon">
-                  <i class="card-restaurant-check-i fa-sharp fa-solid fa-circle-check"></i>
-                </div> <!-- /.__icon -->
-              </article> <!-- /.menu-item -->
+                <!-- Plat #1 -->
+                <article class="menu-item card d-flex">
+                  <div class="menu-item__title">
+                    <span class="text-medium">Noix de coquille Saint Jacques</span>
+                    <div class="menu-item__subtitle">Sur lit de purée celeri-rave</div> <!-- /.subtitle -->
+                  </div> <!-- ./__title -->
+                  <div class="menu-item__price"><span class="text-medium">40€</span></div> <!-- /__price -->
+                  <div class="menu-item__icon"><i class="card-restaurant-check-i fa-sharp fa-solid fa-circle-check"></i></div> <!-- /.__check-icon -->
+                </article> <!-- /.menu-item -->
 
-              <!-- Entrée #3 -->
-              <article class="menu-item card d-flex">
-                <div class="menu-item__title">
-                  <span class="text-medium">Homard et espuma de langoustine</span>
-                  <div class="menu-item__subtitle">
-                     Mariée aux zests d'orange
-                  </div> <!-- /.subtitle -->
-                </div> <!-- ./__title -->
-                <div class="menu-item__price">
-                  <span class="text-medium">20€</span>
-                </div> <!-- /__price -->
-                <div class="menu-item__icon">
-                  <i class="card-restaurant-check-i fa-sharp fa-solid fa-circle-check"></i>
-                </div> <!-- /.__icon -->
-              </article> <!-- /.menu-item -->
+                <!-- Plat #2 -->
+                <article class="menu-item card d-flex">
+                  <div class="menu-item__title">
+                    <span class="text-medium">Langoustine poelée</span>
+                    <div class="menu-item__subtitle">Purée de patate douce</div> <!-- /.subtitle -->
+                  </div> <!-- ./__title -->
+                  <div class="menu-item__price"><span class="text-medium">35€</span></div> <!-- /__price -->
+                  <div class="menu-item__icon"><i class="card-restaurant-check-i fa-sharp fa-solid fa-circle-check"></i></div> <!-- /.__check-icon -->
+                </article> <!-- /.menu-item -->
 
-              <!-- Entrée #4 -->
-              <article class="menu-item card d-flex">
-                <div class="menu-item__title">
-                  <span class="text-medium">Foie gras de canard cuit entier</span>
-                  <div class="menu-item__subtitle">
-                     Confiture de figue et pain toasté
-                  </div> <!-- /.subtitle -->
-                </div> <!-- ./__title -->
-                <div class="menu-item__price">
-                  <span class="text-medium">40€</span>
-                </div> <!-- /__price -->
-                <div class="menu-item__icon">
-                  <i class="card-restaurant-check-i fa-sharp fa-solid fa-circle-check"></i>
-                </div> <!-- /.__icon -->
-              </article> <!-- /.menu-item -->
+                <!-- Plat #3 -->
+                <article class="menu-item card d-flex">
+                  <div class="menu-item__title">
+                    <span class="text-medium">Mijoté de queue de boeuf</span>
+                    <div class="menu-item__subtitle">Et riz sauvage aux zests de citron</div> <!-- /.subtitle -->
+                  </div> <!-- ./__title -->
+                  <div class="menu-item__price"><span class="text-medium">44€</span></div> <!-- /__price -->
+                  <div class="menu-item__icon"><i class="card-restaurant-check-i fa-sharp fa-solid fa-circle-check"></i></div> <!-- /.__check-icon -->
+                </article> <!-- /.menu-item -->
+              </div> <!-- /.menu-category -->
+
+              <div class="menu-category">
+                <!-- Restaurant menu "" Desserts "" -->
+                <div class="category overall-restaurant-pres-margin">Desserts
+                  <div class="category__line overall-restaurant-pres-margin"></div>
+                </div> <!-- /.menu-card-category-div -->
+
+                <!-- Dessert #1 -->
+                <article class="menu-item card d-flex">
+                  <div class="menu-item__title">
+                    <span class="text-medium">Macaron noisette et chocolat</span>
+                    <div class="menu-item__subtitle"> Glace au caramel brun et sel de Guérande
+                    </div> <!-- /.subtitle -->
+                  </div> <!-- ./__title -->
+                  <div class="menu-item__price"><span class="text-medium">18€</span></div> <!-- /__price -->
+                  <div class="menu-item__icon"><i class="card-restaurant-check-i fa-sharp fa-solid fa-circle-check"></i></div> <!-- /.__check-icon -->
+                </article> <!-- /.menu-item -->
+
+                <!-- Dessert #2 -->
+                <article class="menu-item card d-flex">
+                  <div class="menu-item__title">
+                    <span class="text-medium">Baba au rhum revisité</span>
+                    <div class="menu-item__subtitle">Avec son coulis de citron</div> <!-- /.subtitle -->
+                  </div> <!-- ./__title -->
+                  <div class="menu-item__price"><span class="text-medium">22€</span></div> <!-- /__price -->
+                  <div class="menu-item__icon"><i class="card-restaurant-check-i fa-sharp fa-solid fa-circle-check"></i></div> <!-- /.__check-icon -->
+                </article> <!-- /.menu-item -->
+
+                <!-- Dessert #3 -->
+                <article class="menu-item card d-flex">
+                  <div class="menu-item__title">
+                    <span class="text-medium">Tarte au citron meringuée</span>
+                    <div class="menu-item__subtitle">Destructurée</div> <!-- /.subtitle -->
+                  </div> <!-- ./__title -->
+                  <div class="menu-item__price"><span class="text-medium">23€</span></div> <!-- /__price -->
+                  <div class="menu-item__icon"><i class="card-restaurant-check-i fa-sharp fa-solid fa-circle-check"></i></div> <!-- /.__check-icon -->
+                </article> <!-- /.menu-item -->
             </div> <!-- /.menu-category -->
-
-            <div class="menu-category">
-              <!--
-
-                    Restaurant menu "" plats ""
-
-              -->
-              <div class="category overall-restaurant-pres-margin">
-                Plats
-                <div class="category__line overall-restaurant-pres-margin"></div>
-              </div> <!-- /.menu-card-category-div -->
-
-              <!-- Plat #1 -->
-              <article class="menu-item card d-flex">
-                <div class="menu-item__title">
-                  <span class="text-medium">Noix de coquille Saint Jacques</span>
-                  <div class="menu-item__subtitle">
-                     Sur lit de purée celeri-rave
-                  </div> <!-- /.subtitle -->
-                </div> <!-- ./__title -->
-                <div class="menu-item__price">
-                  <span class="text-medium">40€</span>
-                </div> <!-- /__price -->
-                <div class="menu-item__icon">
-                  <i class="card-restaurant-check-i fa-sharp fa-solid fa-circle-check"></i>
-                </div> <!-- /.__icon -->
-              </article> <!-- /.menu-item -->
-
-              <!-- Plat #2 -->
-              <article class="menu-item card d-flex">
-                <div class="menu-item__title">
-                  <span class="text-medium">Langoustine poelée</span>
-                  <div class="menu-item__subtitle">
-                     Purée de patate douce
-                  </div> <!-- /.subtitle -->
-                </div> <!-- ./__title -->
-                <div class="menu-item__price">
-                  <span class="text-medium">35€</span>
-                </div> <!-- /__price -->
-                <div class="menu-item__icon">
-                  <i class="card-restaurant-check-i fa-sharp fa-solid fa-circle-check"></i>
-                </div> <!-- /.__icon -->
-              </article> <!-- /.menu-item -->
-
-              <!-- Plat #3 -->
-              <article class="menu-item card d-flex">
-                <div class="menu-item__title">
-                  <span class="text-medium">Mijoté de queue de boeuf</span>
-                  <div class="menu-item__subtitle">
-                    Et riz sauvage aux zests de citron
-                  </div> <!-- /.subtitle -->
-                </div> <!-- ./__title -->
-                <div class="menu-item__price">
-                  <span class="text-medium">44€</span>
-                </div> <!-- /__price -->
-                <div class="menu-item__icon">
-                  <i class="card-restaurant-check-i fa-sharp fa-solid fa-circle-check"></i>
-                </div> <!-- /.__icon -->
-              </article> <!-- /.menu-item -->
-            </div> <!-- /.menu-category -->
-            <div class="menu-category">
-              <!--
-
-                    Restaurant menu "" Desserts ""
-
-              -->
-              <div class="category overall-restaurant-pres-margin">
-                Desserts
-                <div class="category__line overall-restaurant-pres-margin"></div>
-              </div> <!-- /.menu-card-category-div -->
-
-              <!-- Dessert #1 -->
-              <article class="menu-item card d-flex">
-                <div class="menu-item__title">
-                  <span class="text-medium">Macaron noisette et chocolat</span>
-                  <div class="menu-item__subtitle">
-                    Glace au caramel brun et sel de Guérande
-                  </div> <!-- /.subtitle -->
-                </div> <!-- ./__title -->
-                <div class="menu-item__price">
-                  <span class="text-medium">18€</span>
-                </div> <!-- /__price -->
-                <div class="menu-item__icon">
-                  <i class="card-restaurant-check-i fa-sharp fa-solid fa-circle-check"></i>
-                </div> <!-- /.__icon -->
-              </article> <!-- /.menu-item -->
-
-              <!-- Dessert #2 -->
-              <article class="menu-item card d-flex">
-                <div class="menu-item__title">
-                  <span class="text-medium">Baba au rhum revisité</span>
-                  <div class="menu-item__subtitle">
-                    Avec son coulis de citron
-                  </div> <!-- /.subtitle -->
-                </div> <!-- ./__title -->
-                <div class="menu-item__price">
-                  <span class="text-medium">22€</span>
-                </div> <!-- /__price -->
-                <div class="menu-item__icon">
-                  <i class="card-restaurant-check-i fa-sharp fa-solid fa-circle-check"></i>
-                </div> <!-- /.__icon -->
-              </article> <!-- /.menu-item -->
-
-              <!-- Dessert #3 -->
-              <article class="menu-item card d-flex">
-                <div class="menu-item__title">
-                  <span class="text-medium">Tarte au citron meringuée</span>
-                  <div class="menu-item__subtitle">
-                    Destructurée
-                  </div> <!-- /.subtitle -->
-                </div> <!-- ./__title -->
-                <div class="menu-item__price">
-                  <span class="text-medium">23€</span>
-                </div> <!-- /__price -->
-                <div class="menu-item__icon">
-                  <i class="card-restaurant-check-i fa-sharp fa-solid fa-circle-check"></i>
-                </div> <!-- /.__icon -->
-              </article> <!-- /.menu-item -->
-            </div> <!-- /.menu-category -->
-          </div> <!-- /.mrg-auto-container -->
-          <!--
-              Buy button
-          -->
-          <p class="action-button-container">
-            <a class="action-button-container-a">Commander</a>
-          </p> <!-- /explore-btn-container -->
-        </div> <!-- /.container-d-flex -->
-
+           </div> <!-- /.mrg-auto-container -->
+           <!-- Order button -->
+           <p class="action-button-container"><a class="action-button-container-a">Commander</a></p> <!-- /order-btn-container -->
+         </div> <!-- /.mrg-auto-container -->
+       </div> <!-- /.container-d-flex -->
       </section> <!-- /.menu -->
     </main>
-    <!--
 
-        Footer
-
-    -->
+    <!-- Footer -->
     <footer>
       <div class="mrg-auto-container">
         <h1 class="footer-title-h1">ohmyfood</h1>
