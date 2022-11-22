@@ -1,72 +1,73 @@
+/* These rules are shared by all project pages */
 @import 'overall.scss'
+
+@media (min-width: 1400px)
+  /* This container is used on large screen to make pages condensed */
+  .mrg-auto-container
+    width: 90%
+    margin: auto
+
+.mrg-top-none
+  margin-top: 0
+
+.d-flex, .flex
+  display: flex
+
+/** Text rules */
+p
+  font-family: $content_font
+.text-medium
+  font-weight: 700
+a.link-black
+  color: black
+a.no-decoration
+  text-decoration: none
+
+/** Backgrounds helpers */
+.bg-light
+  background-color: $background_grey_alt_1
+.bg-light-alt
+  background-color: $background_grey_alt_2
+
+/** Pages sections titles */
+.overall-section-titles
+  margin-left: 0
+  font-family: $content_font
+  font-weight: 700
+  font-size: 25px
+
+/** Cards general rules **/
+.card
+  background-color: #fff
+  border-radius: 20px
+  box-shadow: $cards_shadow
+.card-title
+  margin-bottom: 0
+  font-family: $content_font
+
+/* """ CTA buttons */
+.action-button-container
+  margin-bottom: 40px
+  text-align: center
+  a
+    width: 250px
+    margin: auto
+    display: block
+    padding: 20px 0 20px 0
+    margin-bottom: 30px
+    background: rgb(147,86,220)
+    background: linear-gradient(0deg, rgba(147,86,220,1) 24%, rgba(255,121,218,1) 100%)
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25)
+    border-radius: 40px
+    text-decoration: none
+    font-family: $content_font
+    font-weight: 700
+    color: #FFF
+    cursor: pointer
+  a:hover
+    cursor: pointer
+    background: linear-gradient(0deg, rgba(147,86,220,1) 24%, rgba(255,121,218,1) 80%)
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.35)
 
 body
   overflow-x: hidden
-  .mrg-top-none
-    margin-top: 0
-
-  .d-flex
-    display: flex
-
-  /** Text rules */
-  p
-    font-family: $content_font
-
-  .text-medium
-    font-weight: 700
-  a.link-black
-    color: black
-  a.no-decoration
-    text-decoration: none
-
-  /** Backgrounds helpers */
-  .bg-light
-    background-color: #EAEAEA
-  .bg-light-alt
-    background-color: #F6F6F6
-
-
-  /** Pages sections titles */
-  .overall-section-titles
-    margin-left: 0
-    font-family: $content_font
-    font-weight: 700
-    font-size: 25px
-
-  /** Cards general rules **/
-  .card
-    background-color: #fff
-    border-radius: 20px
-    box-shadow: $cards_shadow
-
-  .card-title
-    margin-bottom: 0
-    font-family: $content_font
-
-  @media (min-width: 1400px)
-    .mrg-auto-container
-      width: 80%
-      margin: auto
-
-  /* """ Actions buttons */
-  .action-button-container
-    margin-bottom: 40px
-    text-align: center
-    &-a
-      width: 250px
-      margin: auto
-      display: block
-      padding: 20px 0 20px 0
-      margin-bottom: 30px
-      background: rgb(147,86,220)
-      background: linear-gradient(0deg, rgba(147,86,220,1) 24%, rgba(255,121,218,1) 100%)
-      box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.25)
-      border-radius: 40px
-      font-family: $content_font
-      font-weight: 700
-      color: #FFF
-      cursor: pointer
-    &-a:hover
-      cursor: pointer
-      background: linear-gradient(0deg, rgba(147,86,220,1) 24%, rgba(255,121,218,1) 80%)
-      box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.35)

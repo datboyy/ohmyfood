@@ -1,27 +1,22 @@
-/*
- *
- * Overall header
- *
- */
+/* Overall header */
 @import 'overall.scss'
 
 /* Pages header first target mobile, see the media query below */
-header
-  background: #fff
+.header
+  background: $header_background
   width: 100%
   text-align: center
-  position: relative
   z-index: 1
   box-shadow: 5px 16px 15px -10px rgba(0,0,0,0.15)
-  .header__img
+  &__img
     margin: 25px 0 15px 0
     width: 30%
-  .header__back
+  &__back
     position: absolute
     top: 25px
     left: 15px
     font-size: 25px
-  .header__back-link
+  &__back-link
     color: #000
 
 section.head
@@ -29,19 +24,18 @@ section.head
   text-align: center
   .head
     /* "" Paris, Belleville */
-    &-location
+    &__location
       padding: 15px 0 15px 0
       font-family: $content_font
       font-weight: 700
-    &-location-i
+    &__location__i
       margin-right: 25px
-    /* """ Reservez le menu qui vous convient */
+    /* """ Reservez le menu qui vous convient """ */
     &__title
-
       margin-top: 50px
       font-family: $content_font
       color: #222
-    &-subtitle--p
+    &__subtitle__p
       margin: auto
       margin-top: 0
       font-weight: 300
@@ -53,19 +47,11 @@ section.head
     margin: 15px
     font-family: $content-font
     margin: 0
-    padding: 10px 20px 15px 20px
+    padding: 10px 40px 15px 20px
     text-align: center
 
-/* CTA "" explore "" */
-section.explore-title
-  font-family: $content-font
-  font-weight: 300
-  margin: 0
-  .head-subtitle-p
-    color: #555
-    margin: 15px
-    font-family: $content-font
-
+  .action-button-container
+    margin-top: 50px
 
 /* Target both tablet and desktop */
 @media (min-width: 992px)

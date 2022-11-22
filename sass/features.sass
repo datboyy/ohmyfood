@@ -1,89 +1,92 @@
 /** """ Features """ section */
 @import 'overall.scss'
 
-/** These rules are shared by mobile, tablets & desktop */
+/** Mobile-first */
 .features
     padding: 20px 25px 50px 40px
     h2
-      margin: 0 0 20px -15px
-    .item
+      margin: 25px 0 30px -15px
+    &__item
       margin-bottom: 20px
       padding: 25px 30px 25px 40px
-      background-color: $bg_light
+      background-color: $background_grey_alt_2
       box-shadow: 5px 11px 15px 5px rgba(0,0,0,0.09)
       border-radius: 25px
       font-family: $content_font
-
-/* """ Features """ item circle */
-.item__circle
-  position: absolute
-  width: 35px
-  height: 25px
-  margin: 10px -60px
-  padding-top: 10px
-  border-radius: 35px
-  background-color: $feat_circle_bg
-  font-family: $content_font
-  font-weight: 600
-  color: #fff
-  text-align: center
-
-
-/* """ Features """ card title */
-.item__description
-  font-size: 18px
-  font-weight: 600
-/* """ Features """ card title icon */
-.item__icon
-    color: $feat_item_icon_color
-    font-weight: 600
-    margin-right: 20px
-
+      &:hover
+        background-color: $feat_hover_bg
+        i
+          color: $feat_hover_icon_color
+      /* """ Features """ item circle */
+      &__circle
+         position: absolute
+         width: 35px
+         height: 25px
+         margin: 10px -60px
+         padding-top: 10px
+         border-radius: 35px
+         background-color: $feat_circle_bg
+         font-family: $content_font
+         font-weight: 600
+         color: #fff
+         text-align: center
+      /* """ Features """ card title */
+      &__description
+         font-size: 18px
+         font-weight: 600
+      /* """ Features """ card title icon */
+      i
+         color: $feat_icon_color
+         font-weight: 600
+         margin-right: 20px
 
 /* Targets small screens */
 @media(min-width: 768px) and (max-width: 992px)
-  .features .item
-    margin-left: 20px
-    .item
-      width: 85%
+  .features
+    &__item
+      margin-left: 20px
+      margin-bottom: 40px
+      width: 89.5%
 
 /* Targets tablets */
 @media(min-width: 992px) and (max-width: 1200px)
   .features
-     h2
-       width: 100%
-     .features-container
+     /* A container to make elements displayed flex on high resolution */
+     &__container
         width: 100%
         margin: auto
         display: flex
         flex-wrap: wrap
-        .item
-          width: 100%
-          margin-bottom: 30px
-          text-align: center
+     &__item
+        width: 100%
+        margin-bottom: 30px
+        text-align: center
+     h2
+       width: 100%
 
 /* Targets large screens */
 @media(min-width: 1200px) and (max-width: 1400px)
   .features
-    h2
-      width: 100%
-    .features-container
+    &__container
       display: flex
+      flex-wrap: nowrap
       width: 100%
       margin-left: 25px
-    .item
+    &__item
       width: 33%
       margin-right: 40px
+    h2
+      width: 100%
 
 /* Targets extra-large screens */
 @media(min-width: 1400px)
   .features
-    .features-container
+    &__container
       width: 90%
       display: flex
       justify-content: space-between
       margin: 25px auto auto auto
-    .item
+    &__item
       width: 25%
       text-align: center
       &:not(:last-of-type)
