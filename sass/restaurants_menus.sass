@@ -41,14 +41,14 @@
     opacity: 100%
 
 /* Menu overall header */
-section.menu
+.menu
   width: 100%
 
   .overall-restaurant-pres-margin
     margin-left: 25px
 
   /* Menu heading container */
-  .menu-container
+  &__menu-container
     width: 100%
     position: relative
     margin-top: -30px
@@ -59,7 +59,7 @@ section.menu
     box-shadow: 5px -5px 15px -5px rgba(0,0,0,0.2)
 
   /* Menu presentation heading image */
-  .menu-card-img
+  &__menu-card-img
     width: 100%
     height: 300px
     object-fit: cover
@@ -78,8 +78,6 @@ section.menu
       margin-right: 40px
       align-self: center
       font-size: 30px
-
-
 
   .category
     font-family: $content_font
@@ -112,6 +110,8 @@ section.menu
       width: calc(80%)
       padding: 10px
       white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
     &__subtitle
       width: calc(80%)
       margin-top: 10px
