@@ -14,6 +14,7 @@
     to
       position: relative
 
+/* Loader hovers full page */
 .loader
   width: 100%
   height: 100%
@@ -26,12 +27,14 @@
   animation: hideLoaderAnimation 4s forwards
   z-index: 99
 
+/* Loader image */
 .loader img
   width: 50px
   display: block
   margin: auto
   animation: hideLoaderAnimation 4s forwards
 
+/* Page is out of the scope while the loader is displayed */
 header, main, footer
   position: absolute
   top: -1000%
