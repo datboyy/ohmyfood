@@ -75,6 +75,7 @@
       align-self: center
       font-size: 30px
 
+  /* Menu categories like " entrées ", " plats ", " desserts " */
   .category
     font-family: $content_font
     text-transform: uppercase
@@ -84,6 +85,7 @@
       margin: 10px 0 -10px
       background-color: #92E2D0
 
+  /* A menu item that displays something to eat */
   .menu-item
     margin: 30px 20px 30px 20px
     padding: 5px
@@ -99,13 +101,11 @@
     &:nth-of-type(4)
       animation-delay: calc(4s / 4)
 
-
     &__title
       display: flex
       flex-direction: column
       width: 80%
       padding: 10px
-
     &__subtitle
       width: calc(80%)
       margin-top: 10px
@@ -121,6 +121,8 @@
       text-align: right
       margin-right: 25px
       padding-bottom: 10px
+
+    /* Check icon displayed on hover */
     &__icon
       animation: growReverse 0.5s forwards
       transition: all .2s ease-in-out
@@ -156,7 +158,6 @@
     &:hover .menu-item__icon i
       visibility: visible
       animation: selected 1s forwards, selectedEnd 1s forwards
-
 
 .action-button-container
     margin-top: 50px
